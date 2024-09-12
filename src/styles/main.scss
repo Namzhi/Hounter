@@ -1,8 +1,365 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+@font-face {
+  font-family: 'Lexend';
+  src: local('Lexend'), url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lexend-extra-bold';
+  src: local('Lexend-extra-bold'), url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lexend-light';
+  src: local('Lexend-light'), url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
+}
+
+.button {
+  border: none
+}
 
 body {
+  background-color: grey;
+}
+
+.container {
   font: 100% $font-stack;
   color: $primary-color;
-  background-color: white;
+  padding-left: 120px;
+  box-sizing: border-box;
+  width: 1440px;
+  height: 4590px;
+  background: #FFF;
+  background: linear-gradient(145deg, #82FFD2 10px, white 600px);
+
 }
+
+.intro__container {
+  width: 100%;
+  height: 720px;
+}
+
+.logo {
+  &__name {
+    color: var(--MRT-App-Headline, #1B1C57);
+    font-family: Lexend, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  &__name::before {
+    content: url('../images/logo.svg');
+    width: 36px;
+    height: 36px;
+    vertical-align: -50%;
+    margin-right: 6px;
+  }
+}
+
+
+.intro {
+
+  &__block-search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 0;
+    width: 440px;
+    color: var(--MRT-App-Headline, #1B1C57);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: var(--MRT-App-Headline, #1B1C57);
+    font-family: Lexend-extra-bold, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  &__title--transparent {
+    font-family: Helvetica, serif;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    text-shadow: none;
+  }
+
+  &__desc {
+    display: inline-block;
+    width: 496px;
+    color: var(--MRT-App-Neutral-01, #626687);
+    font-family: Lexend-light, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    opacity: 0.75;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 496px;
+  padding: 4px 4px 4px 24px;
+  align-items: center;
+  gap: 16px;
+  border-radius: 32px;
+  border: 1px solid var(--Neutral-300, #E0E3EB);
+  background: #FFF;
+
+  &__input {
+
+    width: 100%;
+    border: none;
+    color: var(--Neutral-500, #888B97);
+    font-family: Lexend, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 157.143% */
+  }
+
+  &__button {
+
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    border-radius: 32px;
+    background: var(--Green-500, #10B981);
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 157.143% */
+  }
+
+  &__button::after {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: url('../images/eva_arrow-ios-forward-fill.svg');
+    vertical-align: -50%;
+  }
+
+
+}
+
+.partners {
+  &__wrapper {
+
+  }
+
+  &__text {
+    color: var(--Neutral-500, #888B97);
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+  }
+
+  &__logos-list {
+    display: flex;
+    width: 427px;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: inline-block;
+    background: url('../images/Frame 9.png') no-repeat;
+    width: 82.75px;
+    height: 64px;
+
+
+    &--traveloka {
+
+    }
+
+    &--tiketcom {
+      background-position: -115px 0
+    }
+
+    &--airbnb {
+      background-position: -230px 0
+    }
+
+    &--tripadvisor {
+      background-position: -345px 0
+    }
+  }
+}
+
+.intro {
+  &__container {
+    display: flex;
+  }
+
+  &__aside {
+    width: 720px;
+    height: 720px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 0px 0px 80px;
+    background: linear-gradient(17deg, #0C1537 -6.09%, rgba(12, 21, 55, 0.00) 32.63%), url("../images/image 6.jpg") lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
+
+  }
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sign-up {
+    display: inline-block;
+    border: none;
+    padding: 12px 24px;
+
+
+    border-radius: 32px;
+    background: var(--Green-100, #D1FAE5);
+    color: var(--Green-700, #047857);
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 157.143% */
+  }
+
+}
+
+.menu {
+  width: 334px;
+  height: 34px;
+
+  &__button {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.10);
+    color: var(--Neutral-100, #F0F3FD);
+    font-family: Lexend, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    height: 34px;
+
+    &--drop-down {
+    }
+
+    &--drop-down::after {
+      width: 16px;
+      height: 16px;
+      content: url('../images/eva_arrow-ios-forward-fill-down.svg');
+      margin-left: 10px;
+      vertical-align: -30%;
+    }
+  }
+}
+
+.carousel {
+  &__main-wrapper {
+    overflow: hidden;
+  }
+
+  &__slider-wrapper .swiper-slide {
+    width: auto
+  }
+}
+
+
+.slider {
+  &__image {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    border: 3px solid #FFF;
+    box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.10);
+
+    &--people {
+      display: flex;
+
+      &:nth-child(1) {
+        transform: translate(0%, 0px);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, 0px);
+      }
+
+      &:nth-child(3) {
+        transform: translate(-100%, 0px);
+      }
+    }
+  }
+
+  &__images-wrapper {
+    display: flex;
+    width: fit-content;
+    margin-right: 16px;
+
+    &--people {
+      //justify-content: flex-start;
+      width: 120px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    box-sizing: border-box;
+    padding: 24px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 32px;
+    background-color: #FFF;
+    width: fit-content;
+    height: 104px;
+    box-shadow: 0 11px 48px 0 rgba(51, 51, 51, 0.06);
+  }
+
+  &__text {
+    display: flex;
+    //width: 152px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  &__title {
+
+    color: var(--MRT-App-Headline, #1B1C57);
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+  }
+
+  &__desc {
+    color: var(--MRT-App-Subheadline, #68799F);
+    font-family: Lexend;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+  }
+}
+
+
+
+
+

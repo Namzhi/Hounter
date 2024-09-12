@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const ESLintWebpackPlugin = require("eslint-webpack-plugin");
-const ESLintPlugin = require('eslint-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
   mode: 'development',
   entry: {
@@ -27,8 +27,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.s[ac]ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader', // compiles SASS to CSS
+        ],
+      },
+      {
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'less-loader', // compiles Less to CSS
+        ],
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
         test: /\.js$/,
@@ -53,6 +69,16 @@ module.exports = {
       template: './src/template.html',
       inject: true,
     }),
-    new ESLintPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/images',
+          to: 'images',
+        },
+      ],
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'style.css',
+    }),
   ],
 }
