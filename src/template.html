@@ -1,353 +1,503 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-            name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
     />
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
 
     <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-<div class="container">
-    <!--    <div class="intro__container">-->
-    <!--        <div class="intro__block-search">-->
-    <!--            <div class="logo"><span class="logo__name">Hounter</span></div>-->
-    <!--            <h1 class="intro__title">find the place to-->
-    <!--                live-->
-    <!--                <span class="intro__title intro__title&#45;&#45;transparent">your dreams</span>-->
-    <!--                easily here-->
-    <!--            </h1>-->
-    <!--            <span class="intro__desc">Everything you need about-->
-    <!--                    finding your place to live will be here, where it will be easier for you</span>-->
-    <!--            <label for="search__input"></label>-->
-    <!--            <div class="search">-->
-    <!--                <img class="search__location-logo" src="./images/fluent_location-16-filled.svg">-->
-    <!--                <input class="search__input" id="search__input" placeholder="Search for the location you want!"-->
-    <!--                       type="text">-->
-    <!--                <button class="search__button button">Search</button>-->
-    <!--            </div>-->
-    <!--            <div class="partners__wrapper">-->
-    <!--                <span class="partners__text">Our Partnership</span>-->
-    <!--                <div class="partners__logos-list">-->
-    <!--                    <div class="partners__logo partners__logo&#45;&#45;traveloka"></div>-->
-    <!--                    <div class="partners__logo partners__logo&#45;&#45;tiketcom"></div>-->
-    <!--                    <div class="partners__logo partners__logo&#45;&#45;airbnb"></div>-->
-    <!--                    <div class="partners__logo partners__logo&#45;&#45;tripadvisor"></div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
+  </head>
+  <body>
+    <div class="container">
+      <!--    <div class="intro__container">-->
+      <!--        <div class="intro__block-search">-->
+      <!--            <div class="logo"><span class="logo__name">Hounter</span></div>-->
+      <!--            <h1 class="intro__title">find the place to-->
+      <!--                live-->
+      <!--                <span class="intro__title intro__title&#45;&#45;transparent">your dreams</span>-->
+      <!--                easily here-->
+      <!--            </h1>-->
+      <!--            <span class="intro__desc">Everything you need about-->
+      <!--                        finding your place to live will be here, where it will be easier for you</span>-->
+      <!--            <label for="search__input"></label>-->
+      <!--            <div class="search">-->
+      <!--                <img class="search__location-logo" src="./images/fluent_location-16-filled.svg">-->
+      <!--                <input class="search__input" id="search__input" placeholder="Search for the location you want!"-->
+      <!--                       type="text">-->
+      <!--                <button class="search__button button">Search</button>-->
+      <!--            </div>-->
+      <!--            <div class="partners__wrapper">-->
+      <!--                <span class="partners__text">Our Partnership</span>-->
+      <!--                <div class="partners__logos-list">-->
+      <!--                    <div class="partners__logo partners__logo&#45;&#45;traveloka"></div>-->
+      <!--                    <div class="partners__logo partners__logo&#45;&#45;tiketcom"></div>-->
+      <!--                    <div class="partners__logo partners__logo&#45;&#45;airbnb"></div>-->
+      <!--                    <div class="partners__logo partners__logo&#45;&#45;tripadvisor"></div>-->
+      <!--                </div>-->
+      <!--            </div>-->
+      <!--        </div>-->
 
-    <!--        <div class="intro__aside">-->
-    <!--            <div class="intro__header">-->
-    <!--                <div class="menu">-->
-    <!--                    <button class="menu__button button">About Us</button>-->
-    <!--                    <button class="menu__button button">Article</button>-->
-    <!--                    <button class="menu__button menu__button&#45;&#45;drop-down button">Property</button>-->
+      <!--        <div class="intro__aside">-->
+      <!--            <div class="intro__header">-->
+      <!--                <div class="menu">-->
+      <!--                    <button class="menu__button button">About Us</button>-->
+      <!--                    <button class="menu__button button">Article</button>-->
+      <!--                    <button class="menu__button menu__button&#45;&#45;drop-down button">Property</button>-->
 
-    <!--                </div>-->
-    <!--                <button class="intro__sign-up button">Sign Up!</button>-->
-    <!--            </div>-->
-    <!--            <div class="carousel__main-wrapper">-->
-    <!--                <div class="carousel swiper-container">-->
-    <!--                    <div class="carousel__slider-wrapper swiper-wrapper">-->
-    <!--                        &lt;!&ndash; Slides &ndash;&gt;-->
-    <!--                        <div class="carousel__slide swiper-slide">-->
-    <!--                            <div class="slider__content">-->
-    <!--                                <div class="slider__images-wrapper slider__images-wrapper&#45;&#45;people">-->
-    <!--                                    <img class="slider__image slider__image&#45;&#45;people" src="images/img.png">-->
-    <!--                                    <img class="slider__image slider__image&#45;&#45;people" src="images/img.png">-->
-    <!--                                    <img class="slider__image slider__image&#45;&#45;people" src="images/img.png">-->
-    <!--                                </div>-->
-    <!--                                <div class="slider__text">-->
-    <!--                                    <div class="slider__title">1K+ People</div>-->
-    <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="carousel__slide swiper-slide">-->
-    <!--                            <div class="slider__content">-->
-    <!--                                <div class="slider__images-wrapper">-->
-    <!--                                    <img class="slider__image" src="images/img_1.png">-->
+      <!--                </div>-->
+      <!--                <button class="intro__sign-up button">Sign Up!</button>-->
+      <!--            </div>-->
+      <!--            <div class="carousel__main-wrapper">-->
+      <!--                <div class="carousel swiper-container">-->
+      <!--                    <div class="carousel__slider-wrapper swiper-wrapper">-->
+      <!--                        &lt;!&ndash; Slides &ndash;&gt;-->
+      <!--                        <div class="carousel__slide swiper-slide">-->
+      <!--                            <div class="slider__content">-->
+      <!--                                <div class="slider__images-wrapper slider__images-wrapper&#45;&#45;people">-->
+      <!--                                    <img class="slider__image slider__image&#45;&#45;people" src="images/img.png">-->
+      <!--                                    <img class="slider__image slider__image&#45;&#45;people" src="images/img.png">-->
+      <!--                                    <img class="slider__image slider__image&#45;&#45;people" src="images/img.png">-->
+      <!--                                </div>-->
+      <!--                                <div class="slider__text">-->
+      <!--                                    <div class="slider__title">1K+ People</div>-->
+      <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                                </div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                        <div class="carousel__slide swiper-slide">-->
+      <!--                            <div class="slider__content">-->
+      <!--                                <div class="slider__images-wrapper">-->
+      <!--                                    <img class="slider__image" src="images/img_1.png">-->
 
-    <!--                                </div>-->
-    <!--                                <div class="slider__text">-->
-    <!--                                    <div class="slider__title">1K+ People</div>-->
-    <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="carousel__slide swiper-slide">-->
-    <!--                            <div class="slider__content">-->
-    <!--                                <div class="slider__images-wrapper">-->
-    <!--                                    <img class="slider__image" src="images/img.png">-->
+      <!--                                </div>-->
+      <!--                                <div class="slider__text">-->
+      <!--                                    <div class="slider__title">1K+ People</div>-->
+      <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                                </div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                        <div class="carousel__slide swiper-slide">-->
+      <!--                            <div class="slider__content">-->
+      <!--                                <div class="slider__images-wrapper">-->
+      <!--                                    <img class="slider__image" src="images/img.png">-->
 
-    <!--                                </div>-->
-    <!--                                <div class="slider__text">-->
-    <!--                                    <div class="slider__title">1K+ People</div>-->
-    <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="carousel__slide swiper-slide">-->
-    <!--                            <div class="slider__content">-->
-    <!--                                <div class="slider__images-wrapper">-->
-    <!--                                    <img class="slider__image" src="images/img.png">-->
+      <!--                                </div>-->
+      <!--                                <div class="slider__text">-->
+      <!--                                    <div class="slider__title">1K+ People</div>-->
+      <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                                </div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                        <div class="carousel__slide swiper-slide">-->
+      <!--                            <div class="slider__content">-->
+      <!--                                <div class="slider__images-wrapper">-->
+      <!--                                    <img class="slider__image" src="images/img.png">-->
 
-    <!--                                </div>-->
-    <!--                                <div class="slider__text">-->
-    <!--                                    <div class="slider__title">1K+ People</div>-->
-    <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                        <div class="carousel__slide swiper-slide">-->
-    <!--                            <div class="slider__content">-->
-    <!--                                <div class="slider__images-wrapper">-->
-    <!--                                    <img class="slider__image" src="images/img.png">-->
+      <!--                                </div>-->
+      <!--                                <div class="slider__text">-->
+      <!--                                    <div class="slider__title">1K+ People</div>-->
+      <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                                </div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                        <div class="carousel__slide swiper-slide">-->
+      <!--                            <div class="slider__content">-->
+      <!--                                <div class="slider__images-wrapper">-->
+      <!--                                    <img class="slider__image" src="images/img.png">-->
 
-    <!--                                </div>-->
-    <!--                                <div class="slider__text">-->
-    <!--                                    <div class="slider__title">1K+ People</div>-->
-    <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
+      <!--                                </div>-->
+      <!--                                <div class="slider__text">-->
+      <!--                                    <div class="slider__title">1K+ People</div>-->
+      <!--                                    <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                                </div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
 
-    <!--                    </div>-->
-    <!--                    &lt;!&ndash; If we need pagination &ndash;&gt;-->
-    <!--                    <div class="swiper-pagination&#45;&#45;asd"></div>-->
+      <!--                    </div>-->
+      <!--                    &lt;!&ndash; If we need pagination &ndash;&gt;-->
 
-    <!--                </div>-->
+      <!--                </div>-->
 
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+      <!--            </div>-->
+      <!--        </div>-->
+      <!--    </div>-->
 
-    <!--    <div class="recommendation__container">-->
-    <!--        <span class="section-name">Our Recommendation</span>-->
-    <!--        <div class="recommendation__header">-->
-    <!--            <h1 class="section-title">Featured House</h1>-->
-    <!--            <div class="recommendation__menu">-->
-    <!--                <button class="recommendation__button recommendation__button&#45;&#45;house button">-->
-    <!--                    <span class="button__name">House</span></button>-->
-    <!--                <button class="recommendation__button recommendation__button&#45;&#45;villa button"><span class="button__name">Villa</span>-->
-    <!--                </button>-->
-    <!--                <button class="recommendation__button recommendation__button&#45;&#45;apartment button"><span-->
-    <!--                        class="button__name">Apartment</span></button>-->
-    <!--            </div>-->
-    <!--            <div class="swiper-button_wrapper">-->
-    <!--                <div class="recommended-swiper swiper-button-prev"></div>-->
-    <!--                <div class="recommended-swiper swiper-button-next"></div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="recommended-carousel__main-wrapper">-->
-    <!--            <div class="recommended-carousel swiper-container">-->
-    <!--                <div class="recommended-carousel__slider-wrapper swiper-wrapper">-->
-    <!--                    &lt;!&ndash; Slides &ndash;&gt;-->
+      <!--    <div class="recommendation__container">-->
+      <!--        <span class="section-name">Our Recommendation</span>-->
+      <!--        <div class="recommendation__header">-->
+      <!--            <h1 class="section-title">Featured House</h1>-->
+      <!--            <div class="recommendation__menu">-->
+      <!--                <button class="recommendation__button recommendation__button&#45;&#45;house button">-->
+      <!--                    <span class="button__name">House</span></button>-->
+      <!--                <button class="recommendation__button recommendation__button&#45;&#45;villa button"><span class="button__name">Villa</span>-->
+      <!--                </button>-->
+      <!--                <button class="recommendation__button recommendation__button&#45;&#45;apartment button"><span-->
+      <!--                        class="button__name">Apartment</span></button>-->
+      <!--            </div>-->
+      <!--            <div class="swiper-button_wrapper">-->
+      <!--                <div class="recommended-swiper swiper-button-prev"></div>-->
+      <!--                <div class="recommended-swiper swiper-button-next"></div>-->
+      <!--            </div>-->
+      <!--        </div>-->
+      <!--        <div class="recommended-carousel__main-wrapper">-->
+      <!--            <div class="recommended-carousel swiper-container">-->
+      <!--                <div class="recommended-carousel__slider-wrapper swiper-wrapper">-->
+      <!--                    &lt;!&ndash; Slides &ndash;&gt;-->
 
-    <!--                    <div class="recommended-carousel__slide swiper-slide">-->
-    <!--                        <div class="recommended-slider__content">-->
-    <!--                            <div class="house__pic house__pic&#45;&#45;roselands">-->
-    <!--                                <div class="house__offer house__offer&#45;&#45;roselands">Popular</div>-->
-    <!--                            </div>-->
-    <!--                            <div class="house__desc">-->
-    <!--                                <span class="house__name">Roselands House</span>-->
-    <!--                                <span class="house__price">$ 35.000.000</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="recommended-swiper slider__images-wrapper">-->
-    <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-    <!--                                     src="images/img.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="slider__text">-->
-    <!--                                <div class="slider__title">1K+ People</div>-->
-    <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
+      <!--                    <div class="recommended-carousel__slide swiper-slide">-->
+      <!--                        <div class="recommended-slider__content">-->
+      <!--                            <div class="house__pic house__pic&#45;&#45;roselands">-->
+      <!--                                <div class="house__offer house__offer&#45;&#45;roselands">Popular</div>-->
+      <!--                            </div>-->
+      <!--                            <div class="house__desc">-->
+      <!--                                <span class="house__name">Roselands House</span>-->
+      <!--                                <span class="house__price">$ 35.000.000</span>-->
+      <!--                            </div>-->
+      <!--                            <div class="recommended-swiper slider__images-wrapper">-->
+      <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
+      <!--                                     src="images/img.png">-->
+      <!--                            </div>-->
+      <!--                            <div class="slider__text">-->
+      <!--                                <div class="slider__title">1K+ People</div>-->
+      <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                    </div>-->
 
-    <!--                    <div class="recommended-carousel__slide swiper-slide">-->
-    <!--                        <div class="recommended-slider__content">-->
-    <!--                            <div class="house__pic house__pic&#45;&#45;woodlandside">-->
-    <!--                                <div class="house__offer house__offer&#45;&#45;woodlandside">New House</div>-->
-    <!--                            </div>-->
-    <!--                            <div class="house__desc">-->
-    <!--                                <span class="house__name">Woodlandside</span>-->
-    <!--                                <span class="house__price">$ 20.000.000</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="recommended-swiper slider__images-wrapper">-->
-    <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-    <!--                                     src="images/img.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="slider__text">-->
-    <!--                                <div class="slider__title">1K+ People</div>-->
-    <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="recommended-carousel__slide swiper-slide">-->
-    <!--                        <div class="recommended-slider__content">-->
-    <!--                            <div class="house__pic house__pic&#45;&#45;lighthouse">-->
-    <!--                                <div class="house__offer house__offer&#45;&#45;lighthouse">Best Deals</div>-->
-    <!--                            </div>-->
-    <!--                            <div class="house__desc">-->
-    <!--                                <span class="house__name">The Old Lighthouse</span>-->
-    <!--                                <span class="house__price">$ 44.000.000</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="recommended-swiper slider__images-wrapper">-->
-    <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-    <!--                                     src="images/img.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="slider__text">-->
-    <!--                                <div class="slider__title">1K+ People</div>-->
-    <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="recommended-carousel__slide swiper-slide">-->
-    <!--                        <div class="recommended-slider__content">-->
-    <!--                            <div class="house__pic house__pic&#45;&#45;cosmo">-->
-    <!--                                <div class="house__offer house__offer&#45;&#45;cosmo">Popular</div>-->
-    <!--                            </div>-->
-    <!--                            <div class="house__desc">-->
-    <!--                                <span class="house__name">Cosmo's House</span>-->
-    <!--                                <span class="house__price">$ 22.000.000</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="recommended-swiper slider__images-wrapper">-->
-    <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-    <!--                                     src="images/img.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="slider__text">-->
-    <!--                                <div class="slider__title">1K+ People</div>-->
-    <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="recommended-carousel__slide swiper-slide">-->
-    <!--                        <div class="recommended-slider__content">-->
-    <!--                            <div class="house__pic house__pic&#45;&#45;roselands">-->
-    <!--                                <div class="house__offer house__offer&#45;&#45;roselands">Popular</div>-->
-    <!--                            </div>-->
-    <!--                            <div class="house__desc">-->
-    <!--                                <span class="house__name">Roselands House</span>-->
-    <!--                                <span class="house__price">$ 35.000.000</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="recommended-swiper slider__images-wrapper">-->
-    <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-    <!--                                     src="images/img.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="slider__text">-->
-    <!--                                <div class="slider__title">1K+ People</div>-->
-    <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
+      <!--                    <div class="recommended-carousel__slide swiper-slide">-->
+      <!--                        <div class="recommended-slider__content">-->
+      <!--                            <div class="house__pic house__pic&#45;&#45;woodlandside">-->
+      <!--                                <div class="house__offer house__offer&#45;&#45;woodlandside">New House</div>-->
+      <!--                            </div>-->
+      <!--                            <div class="house__desc">-->
+      <!--                                <span class="house__name">Woodlandside</span>-->
+      <!--                                <span class="house__price">$ 20.000.000</span>-->
+      <!--                            </div>-->
+      <!--                            <div class="recommended-swiper slider__images-wrapper">-->
+      <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
+      <!--                                     src="images/img.png">-->
+      <!--                            </div>-->
+      <!--                            <div class="slider__text">-->
+      <!--                                <div class="slider__title">1K+ People</div>-->
+      <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                    </div>-->
+      <!--                    <div class="recommended-carousel__slide swiper-slide">-->
+      <!--                        <div class="recommended-slider__content">-->
+      <!--                            <div class="house__pic house__pic&#45;&#45;lighthouse">-->
+      <!--                                <div class="house__offer house__offer&#45;&#45;lighthouse">Best Deals</div>-->
+      <!--                            </div>-->
+      <!--                            <div class="house__desc">-->
+      <!--                                <span class="house__name">The Old Lighthouse</span>-->
+      <!--                                <span class="house__price">$ 44.000.000</span>-->
+      <!--                            </div>-->
+      <!--                            <div class="recommended-swiper slider__images-wrapper">-->
+      <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
+      <!--                                     src="images/img.png">-->
+      <!--                            </div>-->
+      <!--                            <div class="slider__text">-->
+      <!--                                <div class="slider__title">1K+ People</div>-->
+      <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                    </div>-->
+      <!--                    <div class="recommended-carousel__slide swiper-slide">-->
+      <!--                        <div class="recommended-slider__content">-->
+      <!--                            <div class="house__pic house__pic&#45;&#45;cosmo">-->
+      <!--                                <div class="house__offer house__offer&#45;&#45;cosmo">Popular</div>-->
+      <!--                            </div>-->
+      <!--                            <div class="house__desc">-->
+      <!--                                <span class="house__name">Cosmo's House</span>-->
+      <!--                                <span class="house__price">$ 22.000.000</span>-->
+      <!--                            </div>-->
+      <!--                            <div class="recommended-swiper slider__images-wrapper">-->
+      <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
+      <!--                                     src="images/img.png">-->
+      <!--                            </div>-->
+      <!--                            <div class="slider__text">-->
+      <!--                                <div class="slider__title">1K+ People</div>-->
+      <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                    </div>-->
+      <!--                    <div class="recommended-carousel__slide swiper-slide">-->
+      <!--                        <div class="recommended-slider__content">-->
+      <!--                            <div class="house__pic house__pic&#45;&#45;roselands">-->
+      <!--                                <div class="house__offer house__offer&#45;&#45;roselands">Popular</div>-->
+      <!--                            </div>-->
+      <!--                            <div class="house__desc">-->
+      <!--                                <span class="house__name">Roselands House</span>-->
+      <!--                                <span class="house__price">$ 35.000.000</span>-->
+      <!--                            </div>-->
+      <!--                            <div class="recommended-swiper slider__images-wrapper">-->
+      <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
+      <!--                                     src="images/img.png">-->
+      <!--                            </div>-->
+      <!--                            <div class="slider__text">-->
+      <!--                                <div class="slider__title">1K+ People</div>-->
+      <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                    </div>-->
 
-    <!--                    <div class="recommended-carousel__slide swiper-slide">-->
-    <!--                        <div class="recommended-slider__content">-->
-    <!--                            <div class="house__pic house__pic&#45;&#45;woodlandside">-->
-    <!--                                <div class="house__offer house__offer&#45;&#45;woodlandside">New House</div>-->
-    <!--                            </div>-->
-    <!--                            <div class="house__desc">-->
-    <!--                                <span class="house__name">Woodlandside</span>-->
-    <!--                                <span class="house__price">$ 20.000.000</span>-->
-    <!--                            </div>-->
-    <!--                            <div class="recommended-swiper slider__images-wrapper">-->
-    <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-    <!--                                     src="images/img.png">-->
-    <!--                            </div>-->
-    <!--                            <div class="slider__text">-->
-    <!--                                <div class="slider__title">1K+ People</div>-->
-    <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
+      <!--                    <div class="recommended-carousel__slide swiper-slide">-->
+      <!--                        <div class="recommended-slider__content">-->
+      <!--                            <div class="house__pic house__pic&#45;&#45;woodlandside">-->
+      <!--                                <div class="house__offer house__offer&#45;&#45;woodlandside">New House</div>-->
+      <!--                            </div>-->
+      <!--                            <div class="house__desc">-->
+      <!--                                <span class="house__name">Woodlandside</span>-->
+      <!--                                <span class="house__price">$ 20.000.000</span>-->
+      <!--                            </div>-->
+      <!--                            <div class="recommended-swiper slider__images-wrapper">-->
+      <!--                                <img class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
+      <!--                                     src="images/img.png">-->
+      <!--                            </div>-->
+      <!--                            <div class="slider__text">-->
+      <!--                                <div class="slider__title">1K+ People</div>-->
+      <!--                                <div class="slider__desc">Successfully Getting Home</div>-->
+      <!--                            </div>-->
+      <!--                        </div>-->
+      <!--                    </div>-->
 
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
+      <!--                </div>-->
+      <!--            </div>-->
+      <!--        </div>-->
 
-    <!--    </div>-->
+      <!--    </div>-->
 
-    <div class="tour__container">
+      <!--    <div class="tour__container">-->
 
-        <div class="tour__block-desc">
-            <span class="section-name">Ready to Sell!</span>
-            <h1 class="section-title">Let’s tour and see our house!</h1>
-            <div class="tour__text">
-                Houses recommended by our partners that have been curated to become the home of your dreams!
-            </div>
-            <div class="tour__house-detail">
-                <h3 class="tour__house-detail--header">House Detail</h3>
-                <span class="tour__house-detail--bedroom">4 Bedrooms</span>
-                <span class="tour__house-detail--bathroom">2 Bathrooms</span>
-                <span class="tour__house-detail--carport">1 Carport</span>
-                <span class="tour__house-detail--floors">2 Floors</span>
-            </div>
-            <div class="contact__wrapper">
-                <div class="contact__photo--container recommended-swiper">
-                    <img class="contact__image slider__image" src="images/img.png"/>
-                </div>
-                <div class="contact__name slider__text">
-                    <div class="slider__title">Dianne Russell</div>
-                    <div class="contact__position slider__desc">Manager Director</div>
-                </div>
-                <button class="contact__button button"><span class="contact__button--text">Contact Now</span></button>
-            </div>
-        </div>
+      <!--        <div class="tour__block-desc">-->
+      <!--            <span class="section-name">Ready to Sell!</span>-->
+      <!--            <h1 class="section-title">Let’s tour and see our house!</h1>-->
+      <!--            <div class="tour__text">-->
+      <!--                Houses recommended by our partners that have been curated to become the home of your dreams!-->
+      <!--            </div>-->
+      <!--            <div class="tour__house-detail">-->
+      <!--                <h3 class="tour__house-detail&#45;&#45;header">House Detail</h3>-->
+      <!--                <span class="tour__house-detail&#45;&#45;bedroom">4 Bedrooms</span>-->
+      <!--                <span class="tour__house-detail&#45;&#45;bathroom">2 Bathrooms</span>-->
+      <!--                <span class="tour__house-detail&#45;&#45;carport">1 Carport</span>-->
+      <!--                <span class="tour__house-detail&#45;&#45;floors">2 Floors</span>-->
+      <!--            </div>-->
+      <!--            <div class="contact__wrapper">-->
+      <!--                <div class="contact__photo&#45;&#45;container recommended-swiper">-->
+      <!--                    <img class="contact__image slider__image" src="images/img.png"/>-->
+      <!--                </div>-->
+      <!--                <div class="contact__name slider__text">-->
+      <!--                    <div class="slider__title">Dianne Russell</div>-->
+      <!--                    <div class="contact__position slider__desc">Manager Director</div>-->
+      <!--                </div>-->
+      <!--                <button class="contact__button button"><span class="contact__button&#45;&#45;text">Contact Now</span></button>-->
+      <!--            </div>-->
+      <!--        </div>-->
 
-        <div class="tour-carousel-mini__container">
-            <div class="tour-carousel-mini__main-wrapper">
-                <div class="tour-carousel-mini swiper">
-                    <div class="tour-carousel-mini__slider-wrapper swiper-wrapper">
-                        <!-- Slides -->
+      <!--        <div class="tour-carousel-mini__container">-->
+      <!--            <div class="tour-carousel-mini__main-wrapper">-->
+      <!--                <div class="tour-carousel-mini swiper">-->
+      <!--                    <div class="tour-carousel-mini__slider-wrapper swiper-wrapper">-->
+      <!--                        &lt;!&ndash; Slides &ndash;&gt;-->
 
-                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--coach"></div>
-                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--video">
-                            <img alt="" src="./images/Vector.svg"/>
-                        </div>
-                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--plant"></div>
-                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--chair"></div>
+      <!--                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide&#45;&#45;coach"></div>-->
+      <!--                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide&#45;&#45;video">-->
+      <!--                            <img alt="" src="./images/Vector.svg"/>-->
+      <!--                        </div>-->
+      <!--                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide&#45;&#45;plant"></div>-->
+      <!--                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide&#45;&#45;chair"></div>-->
+      <!--                    </div>-->
+      <!--                </div>-->
+      <!--            </div>-->
+      <!--        </div>-->
+      <!--        <div class="tour-carousel__container tour-carousel__container&#45;&#45;invisible">-->
+      <!--            <div class="tour-carousel__main-wrapper">-->
+      <!--                <button class="tour-carousel__button tour-carousel__button&#45;&#45;exit button"></button>-->
+      <!--                <button class="tour-carousel__button swiper-button-prev button"></button>-->
+      <!--                <div class="tour-carousel swiper">-->
+      <!--                    <div class="tour-carousel__slider-wrapper swiper-wrapper">-->
+      <!--                        &lt;!&ndash; Slides &ndash;&gt;-->
+
+      <!--                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide&#45;&#45;coach"></div>-->
+      <!--                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide&#45;&#45;video">-->
+      <!--                            <iframe-->
+      <!--                                    allow="autoplay; fullscreen;"-->
+      <!--                                    class="tour__video"-->
+      <!--                                    src="https://player.vimeo.com/video/714576480?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1"-->
+      <!--                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"-->
+      <!--                                    title="French House Tour Video 2022"-->
+      <!--                            ></iframe>-->
+      <!--                        </div>-->
+      <!--                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide&#45;&#45;plant"></div>-->
+      <!--                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide&#45;&#45;chair"></div>-->
+      <!--                    </div>-->
+      <!--                </div>-->
+      <!--                <button class="tour-carousel__button swiper-button-next button"></button>-->
+      <!--            </div>-->
+
+      <!--            <div class="tour-carousel__pagination swiper-pagination"></div>-->
+
+      <!--        </div>-->
+      <!--    </div>-->
+
+      <div class="review__container">
+        <span class="section-name">See Our Review</span>
+        <h1 class="section-title">What Our User Say About Us</h1>
+        <div class="review-carousel__main-wrapper">
+          <div class="review-carousel swiper-container">
+            <div class="review-carousel__slider-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <!---->
+              <div class="review-carousel__slide swiper-slide">
+                <div class="review-slider__content">
+                  <div class="house__pic house__pic--yellow"></div>
+                  <div class="review-carousel__house review-carousel__house--yellow">
+                    <span class="review-carousel__house--title">Best! I got the house I wanted through Hounter</span>
+                    <span class="review-carousel__house--text"
+                      >Through this website I can get a house with the type and specifications I want very easily,
+                      without a complicated process to be able to find information on the house we want.</span
+                    >
+
+                    <div class="contact__wrapper">
+                      <div class="contact__photo--container recommended-swiper">
+                        <img class="contact__image slider__image" src="images/img.png" />
+                      </div>
+                      <div class="contact__name slider__text">
+                        <div class="slider__title">Dianne Russell</div>
+                        <div class="contact__position slider__desc">Manager Director</div>
+                      </div>
+                      <div class="contact__rating">4.6</div>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <div class="tour-carousel__container tour-carousel__container--invisible">
-            <div class="tour-carousel__main-wrapper">
-                <button class="tour-carousel__button tour-carousel__button--exit button"></button>
-                <button class="tour-carousel__button swiper-button-prev button"></button>
-                <div class="tour-carousel swiper">
-                    <div class="tour-carousel__slider-wrapper swiper-wrapper">
-                        <!-- Slides -->
+              </div>
 
-                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--coach"></div>
-                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--video">
-                            <iframe
-                                    allow="autoplay; fullscreen;"
-                                    class="tour__video"
-                                    src="https://player.vimeo.com/video/714576480?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1"
-                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-                                    title="French House Tour Video 2022"
-                            ></iframe>
-                        </div>
-                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--plant"></div>
-                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--chair"></div>
+              <div class="review-carousel__slide swiper-slide">
+                <div class="review-slider__content">
+                  <div class="house__pic house__pic--grey"></div>
+                  <div class="review-carousel__house review-carousel__house--grey">
+                    <span class="review-carousel__house--title">Best! I got the house I wanted through Hounter</span>
+                    <span class="review-carousel__house--text"
+                      >Through this website I can get a house with the type and specifications I want very easily,
+                      without a complicated process to be able to find information on the house we want.</span
+                    >
+
+                    <div class="contact__wrapper">
+                      <div class="contact__photo--container recommended-swiper">
+                        <img class="contact__image slider__image" src="images/ellipse6.png" />
+                      </div>
+                      <div class="contact__name slider__text">
+                        <div class="slider__title">Esther Howard</div>
+                        <div class="contact__position slider__desc">Head of Marketing</div>
+                      </div>
+                      <div class="contact__rating">4.6</div>
                     </div>
+                  </div>
                 </div>
-                <button class="tour-carousel__button swiper-button-next button"></button>
+              </div>
+              <div class="review-carousel__slide swiper-slide">
+                <div class="review-slider__content">
+                  <div class="house__pic house__pic--white"></div>
+                  <div class="review-carousel__house review-carousel__house--white">
+                    <span class="review-carousel__house--title">My house sold out fast!</span>
+                    <span class="review-carousel__house--text">
+                      I was finally able to sell my house quickly through Hounter by immediately setting me up with
+                      people who wanted my house. I also do not get a discount from the sale of my house. Awesome!
+                    </span>
+
+                    <div class="contact__wrapper">
+                      <div class="contact__photo--container recommended-swiper">
+                        <img class="contact__image slider__image" src="images/blue_man.png" />
+                      </div>
+                      <div class="contact__name slider__text">
+                        <div class="slider__title">Courtney Henry</div>
+                        <div class="contact__position slider__desc">CEO Andarafish</div>
+                      </div>
+                      <div class="contact__rating">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-carousel__slide swiper-slide">
+                <div class="review-slider__content">
+                  <div class="house__pic house__pic--yellow"></div>
+                  <div class="review-carousel__house review-carousel__house--yellow">
+                    <span class="review-carousel__house--title">Best! I got the house I wanted through Hounter</span>
+                    <span class="review-carousel__house--text"
+                      >Through this website I can get a house with the type and specifications I want very easily,
+                      without a complicated process to be able to find information on the house we want.</span
+                    >
+
+                    <div class="contact__wrapper">
+                      <div class="contact__photo--container recommended-swiper">
+                        <img class="contact__image slider__image" src="images/img.png" />
+                      </div>
+                      <div class="contact__name slider__text">
+                        <div class="slider__title">Dianne Russell</div>
+                        <div class="contact__position slider__desc">Manager Director</div>
+                      </div>
+                      <div class="contact__rating">4.6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-carousel__slide swiper-slide">
+                <div class="review-slider__content">
+                  <div class="house__pic house__pic--grey"></div>
+                  <div class="review-carousel__house review-carousel__house--grey">
+                    <span class="review-carousel__house--title">Best! I got the house I wanted through Hounter</span>
+                    <span class="review-carousel__house--text"
+                      >Through this website I can get a house with the type and specifications I want very easily,
+                      without a complicated process to be able to find information on the house we want.</span
+                    >
+
+                    <div class="contact__wrapper">
+                      <div class="contact__photo--container recommended-swiper">
+                        <img class="contact__image slider__image" src="images/ellipse6.png" />
+                      </div>
+                      <div class="contact__name slider__text">
+                        <div class="slider__title">Esther Howard</div>
+                        <div class="contact__position slider__desc">Head of Marketing</div>
+                      </div>
+                      <div class="contact__rating">4.6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-carousel__slide swiper-slide">
+                <div class="review-slider__content">
+                  <div class="house__pic house__pic--white"></div>
+                  <div class="review-carousel__house review-carousel__house--white">
+                    <span class="review-carousel__house--title">My house sold out fast!</span>
+                    <span class="review-carousel__house--text">
+                      I was finally able to sell my house quickly through Hounter by immediately setting me up with
+                      people who wanted my house. I also do not get a discount from the sale of my house. Awesome!
+                    </span>
+
+                    <div class="contact__wrapper">
+                      <div class="contact__photo--container recommended-swiper">
+                        <img class="contact__image slider__image" src="images/blue_man.png" />
+                      </div>
+                      <div class="contact__name slider__text">
+                        <div class="slider__title">Courtney Henry</div>
+                        <div class="contact__position slider__desc">CEO Andarafish</div>
+                      </div>
+                      <div class="contact__rating">4.3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="tour-carousel__pagination swiper-pagination"></div>
-
+          </div>
         </div>
+      </div>
+      <div class="tips__container"></div>
+      <div class="subscribe__container"></div>
+      <div class="footer__container"></div>
     </div>
-
-    <div class="review__container"></div>
-    <div class="tips__container"></div>
-    <div class="subscribe__container"></div>
-    <div class="footer__container"></div>
-</div>
-</body>
+  </body>
 </html>
