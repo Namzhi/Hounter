@@ -3,8 +3,6 @@
     //
     //padding-top: 100px;
     margin-left: -120px;
-
-
   }
 
   &__slide.swiper-slide {
@@ -57,8 +55,9 @@
         //flex-shrink: 0;
         border-radius: 8px;
         opacity: 0.7;
-        background: lightgray 50% / cover no-repeat,
-        #c4c4c4;
+        background:
+          lightgray 50% / cover no-repeat,
+          #c4c4c4;
         background-position: center;
         background-size: cover;
         display: flex;

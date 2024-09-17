@@ -1,9 +1,10 @@
 .tips {
   &__container {
+    padding-right: 120px;
+
     & > .section-title {
       width: 422px;
       margin: 0 auto 24px;
-
     }
   }
 
@@ -12,13 +13,10 @@
 
     &::after {
       //background: none;
-      content: "";
-      width: 0
+      content: '';
+      width: 0;
     }
-
-
   }
-
 
   &__content-wrapper {
     display: flex;
@@ -31,13 +29,13 @@
   }
 }
 
-
 .button {
 }
 
 .article-list {
   //height: 522px;
   width: 573px;
+  padding: 0;
 
   &__item {
     list-style-type: none;
@@ -53,18 +51,18 @@
     width: 560px;
 
     & > .article__image {
-
       width: 560px;
       height: 280px;
       object-fit: cover;
       flex-shrink: 0;
       border-radius: 16px;
-      background: lightgray 50% / cover no-repeat, #C4C4C4;
+      background: lightgray 50% / cover no-repeat,
+      #c4c4c4;
       margin-bottom: 24px;
     }
 
     & > .article__text > .article__title {
-      color: var(--MRT-App-Headline, #1B1C57);
+      color: var(--MRT-App-Headline, #1b1c57);
       font-family: Lexend;
       font-size: 24px;
       font-style: normal;
@@ -84,7 +82,6 @@
       line-height: 24px; /* 171.429% */
       opacity: 0.75;
     }
-
   }
 
   &__image {
@@ -92,12 +89,11 @@
     height: 144px;
     border-radius: 16px;
     margin-right: 32px;
-
   }
 
   &__text p {
     margin: 0;
-    color: var(--MRT-App-Headline, #1B1C57);
+    color: var(--MRT-App-Headline, #1b1c57);
     font-family: Lexend;
     font-size: 18px;
     font-style: normal;
@@ -113,17 +109,15 @@
     }
 
     & > .contact {
-
-
       &__image {
         width: 32px;
         height: 32px;
         margin-right: 16px;
-        border: none
+        border: none;
       }
 
       &__name {
-        color: var(--Neutral-700, #3C4563);
+        color: var(--Neutral-700, #3c4563);
         font-family: Lexend;
         font-size: 14px;
         font-style: normal;
@@ -133,9 +127,8 @@
     }
   }
 
-
   &__time-date {
-    color: var(--Neutral-500, #888B97);
+    color: var(--Neutral-500, #888b97);
     font-family: Lexend;
     font-size: 14px;
     font-style: normal;
@@ -148,7 +141,6 @@
       vertical-align: -25%;
       margin-right: 12px;
     }
-
   }
 
   &__time {
@@ -160,7 +152,6 @@
   &__desc {
   }
 }
-
 
 .slider {
   &__image {

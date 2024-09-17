@@ -3,6 +3,7 @@ import './styles/recommended.scss'
 import './styles/tour.scss'
 import './styles/review.scss'
 import './styles/tips.scss'
+import './styles/subscribe.scss'
 import 'normalize.css'
 // import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
 // import Swiper JS
