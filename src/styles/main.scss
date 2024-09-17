@@ -2,21 +2,27 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 @font-face {
   font-family: 'Lexend';
-  src: local('Lexend'), url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+  src:
+    local('Lexend'),
+    url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lexend-extra-bold';
-  src: local('Lexend-extra-bold'), url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
+  src:
+    local('Lexend-extra-bold'),
+    url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lexend-light';
-  src: local('Lexend-light'), url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
+  src:
+    local('Lexend-light'),
+    url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
 }
 
 .button {
-  border: none
+  border: none;
 }
 
 body {
@@ -30,9 +36,8 @@ body {
   box-sizing: border-box;
   width: 1440px;
   height: 4590px;
-  background: #FFF;
-  background: linear-gradient(145deg, #82FFD2 10px, white 600px);
-
+  background: #fff;
+  background: linear-gradient(145deg, #82ffd2 10px, white 600px);
 }
 
 .intro__container {
@@ -42,7 +47,7 @@ body {
 
 .logo {
   &__name {
-    color: var(--MRT-App-Headline, #1B1C57);
+    color: var(--MRT-App-Headline, #1b1c57);
     font-family: Lexend, serif;
     font-size: 16px;
     font-style: normal;
@@ -60,9 +65,7 @@ body {
   }
 }
 
-
 .intro {
-
   &__block-search {
     display: flex;
     flex-direction: column;
@@ -71,9 +74,9 @@ body {
   &__title {
     margin: 0;
     width: 440px;
-    color: var(--MRT-App-Headline, #1B1C57);
+    color: var(--MRT-App-Headline, #1b1c57);
     -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: var(--MRT-App-Headline, #1B1C57);
+    -webkit-text-stroke-color: var(--MRT-App-Headline, #1b1c57);
     font-family: Lexend-extra-bold, serif;
     font-size: 40px;
     font-style: normal;
@@ -111,14 +114,13 @@ body {
   align-items: center;
   gap: 16px;
   border-radius: 32px;
-  border: 1px solid var(--Neutral-300, #E0E3EB);
-  background: #FFF;
+  border: 1px solid var(--Neutral-300, #e0e3eb);
+  background: #fff;
 
   &__input {
-
     width: 100%;
     border: none;
-    color: var(--Neutral-500, #888B97);
+    color: var(--Neutral-500, #888b97);
     font-family: Lexend, serif;
     font-size: 14px;
     font-style: normal;
@@ -127,15 +129,14 @@ body {
   }
 
   &__button {
-
     display: flex;
     padding: 12px 16px;
     align-items: center;
     gap: 4px;
     border: none;
     border-radius: 32px;
-    background: var(--Green-500, #10B981);
-    color: #FFF;
+    background: var(--Green-500, #10b981);
+    color: #fff;
     font-family: Lexend;
     font-size: 14px;
     font-style: normal;
@@ -150,17 +151,14 @@ body {
     content: url('../images/eva_arrow-ios-forward-fill.svg');
     vertical-align: -50%;
   }
-
-
 }
 
 .partners {
   &__wrapper {
-
   }
 
   &__text {
-    color: var(--Neutral-500, #888B97);
+    color: var(--Neutral-500, #888b97);
     font-family: Lexend;
     font-size: 16px;
     font-style: normal;
@@ -180,21 +178,19 @@ body {
     width: 82.75px;
     height: 64px;
 
-
     &--traveloka {
-
     }
 
     &--tiketcom {
-      background-position: -115px 0
+      background-position: -115px 0;
     }
 
     &--airbnb {
-      background-position: -230px 0
+      background-position: -230px 0;
     }
 
     &--tripadvisor {
-      background-position: -345px 0
+      background-position: -345px 0;
     }
   }
 }
@@ -212,10 +208,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0px 0px 0px 80px;
-    background: linear-gradient(17deg, #0C1537 -6.09%, rgba(12, 21, 55, 0.00) 32.63%), url("../images/image 6.jpg") lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
-
+    background:
+      linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
+      url('../images/image 6.jpg') lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
   }
-
 
   &__header {
     display: flex;
@@ -227,9 +223,8 @@ body {
     border: none;
     padding: 12px 24px;
 
-
     border-radius: 32px;
-    background: var(--Green-100, #D1FAE5);
+    background: var(--Green-100, #d1fae5);
     color: var(--Green-700, #047857);
     font-family: Lexend;
     font-size: 14px;
@@ -237,7 +232,6 @@ body {
     font-weight: 600;
     line-height: 22px; /* 157.143% */
   }
-
 }
 
 .menu {
@@ -248,9 +242,9 @@ body {
     display: inline-block;
     padding: 8px 16px;
     border-radius: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(255, 255, 255, 0.10);
-    color: var(--Neutral-100, #F0F3FD);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--Neutral-100, #f0f3fd);
     font-family: Lexend, serif;
     font-size: 14px;
     font-style: normal;
@@ -278,18 +272,17 @@ body {
   }
 
   &__slider-wrapper .swiper-slide {
-    width: auto
+    width: auto;
   }
 }
-
 
 .slider {
   &__image {
     width: 56px;
     height: 56px;
     border-radius: 56px;
-    border: 3px solid #FFF;
-    box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.10);
+    border: 3px solid #fff;
+    box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.1);
 
     &--people {
       display: flex;
@@ -326,7 +319,7 @@ body {
     align-items: center;
     justify-content: space-between;
     border-radius: 32px;
-    background-color: #FFF;
+    background-color: #fff;
     width: fit-content;
     height: 104px;
     box-shadow: 0 11px 48px 0 rgba(51, 51, 51, 0.06);
@@ -340,8 +333,7 @@ body {
   }
 
   &__title {
-
-    color: var(--MRT-App-Headline, #1B1C57);
+    color: var(--MRT-App-Headline, #1b1c57);
     font-family: Lexend;
     font-size: 16px;
     font-style: normal;
@@ -350,7 +342,7 @@ body {
   }
 
   &__desc {
-    color: var(--MRT-App-Subheadline, #68799F);
+    color: var(--MRT-App-Subheadline, #68799f);
     font-family: Lexend;
     font-size: 12px;
     font-style: normal;
@@ -358,8 +350,3 @@ body {
     line-height: 20px; /* 166.667% */
   }
 }
-
-
-
-
-

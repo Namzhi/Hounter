@@ -1,6 +1,7 @@
 import './styles/main.scss'
 import './styles/recommended.scss'
 import './styles/tour.scss'
+import './styles/review.scss'
 // import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
 // import Swiper JS
 import Swiper from 'swiper'
@@ -74,15 +75,23 @@ let swiperK = new Swiper('.tour-carousel', {
     minRatio: 1,
   },
 })
-tourCarouselMini.addEventListener('click', () => {
-  tourCarousel.classList.remove('tour-carousel__container--invisible')
-})
-const tourCarouselButton = document.querySelector('.tour-carousel__button--exit')
-tourCarouselButton.addEventListener('click', () => {
-  tourCarousel.classList.add('tour-carousel__container--invisible')
-})
-// const tourCarousel__wrapper = document.querySelector('.container:not(.tour-carousel__main-wrapper)')
-//
-// tourCarousel__wrapper.addEventListener('click', () => {
+//!!!!!!!!!!!!!!!!!!
+// tourCarouselMini.addEventListener('click', () => {
+//   tourCarousel.classList.remove('tour-carousel__container--invisible')
+// })
+// const tourCarouselButton = document.querySelector('.tour-carousel__button--exit')
+// tourCarouselButton.addEventListener('click', () => {
 //   tourCarousel.classList.add('tour-carousel__container--invisible')
 // })
+//!!!!!!!!!!!!!!!!!!
+const swiperReview = new Swiper('.review-carousel', {
+  loop: true,
+
+  spaceBetween: 56,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  // navigation: {
+  //   nextEl: '.revieswiper.swiper-button-next',
+  //   prevEl: '.recommended-swiper.swiper-button-prev',
+  // },
+})

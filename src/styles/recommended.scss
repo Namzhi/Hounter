@@ -1,0 +1,198 @@
+.recommendation {
+  &__container {
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+    //justify-content: space-between;
+  }
+
+  &__button {
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 32px;
+    border: 1px solid var(--Neutral-300, #e0e3eb);
+    color: var(--Neutral-500, #888b97);
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+    &--house {
+      .button__name::before {
+        content: url('../images/ph_house-fill.svg');
+        width: 36px;
+        height: 36px;
+        vertical-align: -25%;
+        margin-right: 6px;
+      }
+    }
+
+    &--villa {
+      .button__name::before {
+        content: url('../images/ic_round-villa.svg');
+        width: 36px;
+        height: 36px;
+        vertical-align: -25%;
+        margin-right: 6px;
+      }
+    }
+
+    &--apartment {
+      .button__name::before {
+        content: url('../images/ic_round-apartment.svg');
+        width: 36px;
+        height: 36px;
+        vertical-align: -25%;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+.section-name {
+  color: var(--Yellow-500, #f59e0b);
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-left: -40px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background: var(--Yellow-500, #f59e0b);
+    vertical-align: 25%;
+    margin-right: 8px;
+  }
+}
+
+.section-title {
+  color: var(--MRT-App-Headline, #1b1c57);
+  font-family: Lexend;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.swiper-button_wrapper {
+  display: flex;
+}
+
+.recommended-swiper {
+}
+
+.swiper-button-prev {
+  width: 60px;
+  height: 52px;
+
+  border-radius: 32px;
+  background: center url('../images/eva_arrow-ios-forward-fill (4).svg') no-repeat var(--Neutral-300, #e0e3eb);
+  background-size: 28px;
+  margin-right: 16px;
+}
+
+.swiper-button-next {
+  width: 60px;
+  height: 52px;
+
+  border-radius: 32px;
+  background: center url('../images/eva_arrow-ios-forward-fill (4).svg') no-repeat var(--Neutral-300, #e0e3eb);
+  transform: rotate(180deg);
+  background-size: 28px;
+}
+
+.swiper-button-next .active {
+}
+
+.recommended-carousel {
+  &__main-wrapper {
+    overflow: hidden;
+  }
+
+  &__slider-wrapper {
+  }
+
+  &__slide.swiper-slide {
+    width: auto;
+  }
+}
+
+.recommended-slider {
+  &__content {
+    width: fit-content;
+  }
+}
+
+.house {
+  &__pic {
+    width: 340px;
+    height: 382px;
+
+    &--roselands {
+      background-image: url('../images/Rectangle 15.png');
+    }
+
+    &--woodlandside {
+      background-image: url('../images/woodlandside.png');
+    }
+
+    &--lighthouse {
+      background-image: url('../images/lighthouse.png');
+    }
+
+    &--cosmo {
+      border-radius: 24px;
+
+      background-clip: padding-box;
+      background: url('../images/cosmo.jpeg') 0 -10px;
+      background-size: 100%;
+    }
+  }
+
+  &__offer {
+    display: inline-flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 32px;
+    background: var(--Red-100, #fee2e2);
+    transform: translate(16px, 332px);
+
+    &--roselands {
+    }
+
+    &--woodlandside {
+    }
+
+    &--lighthouse {
+    }
+
+    &--cosmo {
+    }
+  }
+
+  &__desc {
+  }
+
+  &__name {
+  }
+
+  &__price {
+  }
+}
