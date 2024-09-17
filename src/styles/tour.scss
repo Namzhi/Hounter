@@ -201,7 +201,9 @@ iframe.tour__video {
   margin-bottom: 5%;
 
   & > .swiper-pagination-bullet-active {
-    background-color: #82ffd2;
+    //background-color: #82ffd2;
+    background-color: #3C4563;
+    
     //width: 150%;
     transform: scale(1.1);
   }

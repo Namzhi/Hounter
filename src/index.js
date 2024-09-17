@@ -86,10 +86,14 @@ let swiperK = new Swiper('.tour-carousel', {
 //!!!!!!!!!!!!!!!!!!
 const swiperReview = new Swiper('.review-carousel', {
   loop: true,
-
   spaceBetween: 56,
   slidesPerView: 'auto',
   centeredSlides: true,
+  initialSlide: 3,
+  pagination: {
+    el: '.review-carousel__swiper-pagination',
+  },
+
   // navigation: {
   //   nextEl: '.revieswiper.swiper-button-next',
   //   prevEl: '.recommended-swiper.swiper-button-prev',
