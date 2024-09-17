@@ -11,7 +11,6 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-
 <div class="container">
     <!--    <div class="intro__container">-->
     <!--        <div class="intro__block-search">-->
@@ -126,7 +125,6 @@
     <!--            </div>-->
     <!--        </div>-->
     <!--    </div>-->
-
 
     <!--    <div class="recommendation__container">-->
     <!--        <span class="section-name">Our Recommendation</span>-->
@@ -273,15 +271,16 @@
 
     <!--    </div>-->
 
-
     <div class="tour__container">
 
-        <span class="section-name">Ready to Sell!</span>
         <div class="tour__block-desc">
+            <span class="section-name">Ready to Sell!</span>
             <h1 class="section-title">Let’s tour and see our house!</h1>
-            <div class="tour__text"></div>
+            <div class="tour__text">
+                Houses recommended by our partners that have been curated to become the home of your dreams!
+            </div>
             <div class="tour__house-detail">
-                <span class="tour__house-detail--header">House Detail</span>
+                <h3 class="tour__house-detail--header">House Detail</h3>
                 <span class="tour__house-detail--bedroom">4 Bedrooms</span>
                 <span class="tour__house-detail--bathroom">2 Bathrooms</span>
                 <span class="tour__house-detail--carport">1 Carport</span>
@@ -289,22 +288,14 @@
             </div>
             <div class="contact__wrapper">
                 <div class="contact__photo--container recommended-swiper">
-                    <img class="contact__image slider__image" src="images/img.png">
+                    <img class="contact__image slider__image" src="images/img.png"/>
                 </div>
                 <div class="contact__name slider__text">
-                    <div class="slider__title">1K+ People</div>
-                    <div class="contact__position slider__desc">Successfully Getting Home</div>
+                    <div class="slider__title">Dianne Russell</div>
+                    <div class="contact__position slider__desc">Manager Director</div>
                 </div>
-                <button class="contact__button button"></button>
+                <button class="contact__button button"><span class="contact__button--text">Contact Now</span></button>
             </div>
-        </div>
-
-
-        <div class="contact__photo--container recommended-swiper">
-            <img class="contact__image slider__image" src="images/img.png">
-        </div>
-        <div class="contact__photo--container recommended-swiper">
-            <img class="contact__image slider__image" src="images/img.png">
         </div>
 
         <div class="tour-carousel-mini__container">
@@ -314,7 +305,9 @@
                         <!-- Slides -->
 
                         <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--coach"></div>
-                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--video"></div>
+                        <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--video">
+                            <img alt="" src="./images/Vector.svg"/>
+                        </div>
                         <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--plant"></div>
                         <div class="tour-carousel-mini__slide swiper-slide tour-carousel-mini__slide--chair"></div>
                     </div>
@@ -322,42 +315,34 @@
             </div>
         </div>
         <div class="tour-carousel__container tour-carousel__container--invisible">
-
             <div class="tour-carousel__main-wrapper">
                 <button class="tour-carousel__button tour-carousel__button--exit button"></button>
                 <button class="tour-carousel__button swiper-button-prev button"></button>
                 <div class="tour-carousel swiper">
-
                     <div class="tour-carousel__slider-wrapper swiper-wrapper">
                         <!-- Slides -->
 
-                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--coach "></div>
+                        <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--coach"></div>
                         <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--video">
-                            <iframe allow="autoplay; fullscreen;"
+                            <iframe
+                                    allow="autoplay; fullscreen;"
                                     class="tour__video"
                                     src="https://player.vimeo.com/video/714576480?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1"
-                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                                    title="French House Tour Video 2022"></iframe>
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+                                    title="French House Tour Video 2022"
+                            ></iframe>
                         </div>
                         <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--plant"></div>
                         <div class="tour-carousel__slide swiper-slide tour-carousel-mini__slide--chair"></div>
-
                     </div>
-
                 </div>
                 <button class="tour-carousel__button swiper-button-next button"></button>
-
             </div>
 
-            <div class="tour-carousel__pagination swiper-pagination">
-            </div>
+            <div class="tour-carousel__pagination swiper-pagination"></div>
 
-            <!--            <img-->
-            <!--                class="recommended-swiper slider__image slider__image&#45;&#45;people"-->
-            <!--                src="images/img.png">-->
         </div>
     </div>
-    -->
 
     <div class="review__container"></div>
     <div class="tips__container"></div>
