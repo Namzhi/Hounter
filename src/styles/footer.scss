@@ -13,18 +13,17 @@
   }
 
   &__company-aside {
-    width: 323px
+    width: 323px;
   }
 
   &__logo-item {
     display: inline-block;
-    background-image: url("../images/Frame 20.svg");
+    background-image: url('../images/Frame 20.svg');
     width: 32px;
     height: 32px;
     margin-right: 24px;
 
     &--facebook {
-
       background-position: 0 0;
     }
 
@@ -34,12 +33,10 @@
 
     &--instagram {
       background-position: 32px 0;
-
     }
   }
 
   &__information {
-
     margin-bottom: 24px;
   }
 
@@ -50,14 +47,14 @@
   }
 
   &__header {
-    color: var(--Neutral-900, #0E1735);
+    color: var(--Neutral-900, #0e1735);
     font-family: Lexend;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
-    margin: 0 0 24px 0
+    margin: 0 0 24px 0;
   }
 
   &__property {
@@ -65,7 +62,6 @@
 
     margin-left: auto;
     margin-right: 88px;
-
   }
 
   &__property-item {
@@ -96,8 +92,6 @@
   &__article {
     width: fit-content;
     margin-right: 88px;
-
-
   }
 
   &__article-item {

@@ -2,23 +2,20 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 @font-face {
   font-family: 'Lexend';
-  src:
-    local('Lexend'),
-    url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+  src: local('Lexend'),
+  url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lexend-extra-bold';
-  src:
-    local('Lexend-extra-bold'),
-    url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
+  src: local('Lexend-extra-bold'),
+  url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lexend-light';
-  src:
-    local('Lexend-light'),
-    url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
+  src: local('Lexend-light'),
+  url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
 }
 
 .button {
@@ -37,12 +34,38 @@ body {
   width: 1440px;
   height: 4590px;
   background: #fff;
+  //background: linear-gradient(145deg, #82ffd2 10px, white 600px);
+  position: relative;
+  //z-index: 2;
+}
+
+.container__spots--intro {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  //left: 0;
+  z-index: 0;
+  width: 644px;
+  height: 337px;
+  flex-shrink: 0;
+  fill: #82FFD2;
+  opacity: 0.8;
+  filter: blur(80px);
   background: linear-gradient(145deg, #82ffd2 10px, white 600px);
+
+}
+
+.container--center {
+  margin: 0 auto;
 }
 
 .intro__container {
-  width: 100%;
+  position: absolute;
+  width: calc(100% - 120px);
   height: 720px;
+  //z-index: 3;
+
+
 }
 
 .logo {
@@ -54,6 +77,11 @@ body {
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+  }
+
+  &__name--margin-intro {
+    margin-top: 45px;
+    margin-bottom: 105px
   }
 
   &__name::before {
@@ -85,6 +113,11 @@ body {
     text-transform: capitalize;
   }
 
+  &__title--margin {
+    margin-bottom: 24px;
+
+  }
+
   &__title--transparent {
     font-family: Helvetica, serif;
     font-weight: 900;
@@ -103,6 +136,7 @@ body {
     font-weight: 400;
     line-height: 28px; /* 175% */
     opacity: 0.75;
+    margin-bottom: 32px;
   }
 }
 
@@ -117,6 +151,13 @@ body {
   border: 1px solid var(--Neutral-300, #e0e3eb);
   background: #fff;
 
+  &__wrapper {
+    &--margin-intro {
+      margin-bottom: 32px
+    }
+  }
+
+
   &__input {
     width: 100%;
     border: none;
@@ -126,6 +167,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 22px; /* 157.143% */
+
   }
 
   &__button {
@@ -175,6 +217,7 @@ body {
   &__logo {
     display: inline-block;
     background: url('../images/Frame 9.png') no-repeat;
+
     width: 82.75px;
     height: 64px;
 
@@ -203,17 +246,21 @@ body {
   &__aside {
     width: 720px;
     height: 720px;
+    margin-left: auto;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0px 0px 0px 80px;
-    background:
-      linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
-      url('../images/image 6.jpg') lightgray -49.239px -4.186px / 124.722% 112.25% no-repeat;
+    background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
+    url('../images/image 6.jpg') lightgray no-repeat;
+    background-size: cover;
   }
 
   &__header {
+    margin-top: 46px;
+    margin-left: 93px;
+    width: 507px;
     display: flex;
     justify-content: space-between;
   }
@@ -222,7 +269,7 @@ body {
     display: inline-block;
     border: none;
     padding: 12px 24px;
-
+    transform: translateY(-6px);
     border-radius: 32px;
     background: var(--Green-100, #d1fae5);
     color: var(--Green-700, #047857);
@@ -235,7 +282,7 @@ body {
 }
 
 .menu {
-  width: 334px;
+  //width: 347px;
   height: 34px;
 
   &__button {
@@ -252,6 +299,9 @@ body {
     line-height: normal;
     text-transform: capitalize;
     height: 34px;
+    //box-sizing: border-box;
+    margin-right: 24px;
+    //margin-top: 6px;
 
     &--drop-down {
     }
@@ -269,6 +319,7 @@ body {
 .carousel {
   &__main-wrapper {
     overflow: hidden;
+    margin: 0 0 48px 48px;
   }
 
   &__slider-wrapper .swiper-slide {
