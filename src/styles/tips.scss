@@ -1,0 +1,174 @@
+.tips {
+  &__container {
+    & > .section-title {
+      width: 422px;
+      margin: 0 auto 24px;
+
+    }
+  }
+
+  &__button {
+    margin: 0 auto 42px;
+
+    &::after {
+      //background: none;
+      content: "";
+      width: 0
+    }
+
+
+  }
+
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.section-name {
+  &--line-up {
+  }
+}
+
+
+.button {
+}
+
+.article-list {
+  //height: 522px;
+  width: 573px;
+
+  &__item {
+    list-style-type: none;
+    height: 144px;
+
+    display: flex;
+    margin-bottom: 44px;
+  }
+}
+
+.article {
+  &--focus {
+    width: 560px;
+
+    & > .article__image {
+
+      width: 560px;
+      height: 280px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 16px;
+      background: lightgray 50% / cover no-repeat, #C4C4C4;
+      margin-bottom: 24px;
+    }
+
+    & > .article__text > .article__title {
+      color: var(--MRT-App-Headline, #1B1C57);
+      font-family: Lexend;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 133.333% */
+      text-transform: capitalize;
+      opacity: 1;
+      margin-bottom: 12px;
+    }
+
+    & > .article__text p {
+      color: var(--MRT-App-Neutral-01, #626687);
+      font-family: Lexend;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+      opacity: 0.75;
+    }
+
+  }
+
+  &__image {
+    width: 200px;
+    height: 144px;
+    border-radius: 16px;
+    margin-right: 32px;
+
+  }
+
+  &__text p {
+    margin: 0;
+    color: var(--MRT-App-Headline, #1B1C57);
+    font-family: Lexend;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+
+  &__contact {
+    &.contact__wrapper {
+      margin-bottom: 12px;
+    }
+
+    & > .contact {
+
+
+      &__image {
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        border: none
+      }
+
+      &__name {
+        color: var(--Neutral-700, #3C4563);
+        font-family: Lexend;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+      }
+    }
+  }
+
+
+  &__time-date {
+    color: var(--Neutral-500, #888B97);
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    &::before {
+      content: url('../images/ic_round-access-time.svg');
+      width: 24px;
+      height: 24px;
+      vertical-align: -25%;
+      margin-right: 12px;
+    }
+
+  }
+
+  &__time {
+  }
+
+  &__date {
+  }
+
+  &__desc {
+  }
+}
+
+
+.slider {
+  &__image {
+  }
+
+  &__text {
+  }
+
+  &__title {
+  }
+}

@@ -68,6 +68,7 @@
   line-height: normal;
   text-transform: capitalize;
   margin-left: -40px;
+  margin-bottom: 12px;
 
   &::before {
     content: '';
@@ -88,6 +89,7 @@
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+
 }
 
 .swiper-button_wrapper {
