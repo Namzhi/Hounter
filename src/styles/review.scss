@@ -13,7 +13,7 @@
 }
 
 .section-name__wrapper {
-  max-width: 430px
+  max-width: 430px;
 }
 
 .section-name__wrapper--center {
@@ -30,7 +30,6 @@
     transform: translate(69.5px, -26px);
   }
 }
-
 
 .section-name {
 }
@@ -59,8 +58,9 @@
         height: 400px;
         border-radius: 8px;
         opacity: 0.7;
-        background: lightgray 50% / cover no-repeat,
-        #c4c4c4;
+        background:
+          lightgray 50% / cover no-repeat,
+          #c4c4c4;
         background-position: center;
         background-size: cover;
         display: flex;
@@ -77,11 +77,9 @@
         &--white {
           background-image: url('../images/house_review3.jpeg');
         }
-
       }
     }
   }
-
 }
 
 .review-carousel {
@@ -172,4 +170,3 @@
     }
   }
 }
-

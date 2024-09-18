@@ -1,4 +1,3 @@
-
 .button {
   border: none;
 }
@@ -14,33 +13,32 @@
   background: #fff;
   position: relative;
   background-image: url('../images/spot_intro_left.svg'), url('../images/spot_intro_top.svg'),
-  url('../images/spot_orange_tour.svg'), url('../images/spot_yellow_tour.svg'),
-  url('../images/spot_blue_article.svg.svg'), url('../images/spot_yellow_article.svg'),
-  url('../images/spot_footer_blue.svg'), url('../images/spot_footer_yellow.svg');
-  background-position: top left,
-  top left,
-  1040px 1452px,
-  1099px 1574px,
-  -170px 2930px,
-  -142px 3187px,
-  1146px 4203px,
-  900px 4268px;
+    url('../images/spot_orange_tour.svg'), url('../images/spot_yellow_tour.svg'),
+    url('../images/spot_blue_article.svg.svg'), url('../images/spot_yellow_article.svg'),
+    url('../images/spot_footer_blue.svg'), url('../images/spot_footer_yellow.svg');
+  background-position:
+    top left,
+    top left,
+    1040px 1452px,
+    1099px 1574px,
+    -170px 2930px,
+    -142px 3187px,
+    1146px 4203px,
+    900px 4268px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
 }
-
 
 .container--center {
   margin: 0 auto;
 }
 
-@media(min-width: $md) {
+@media (min-width: $md) {
   .container {
     max-height: 6000px;
   }
 }
 
-
-@media(min-width: $xl) {
+@media (min-width: $xl) {
   .container {
     font: 100% $font-stack;
     color: $primary-color;
@@ -52,17 +50,18 @@
     background: #fff;
     position: relative;
     background-image: url('../images/spot_intro_left.svg'), url('../images/spot_intro_top.svg'),
-    url('../images/spot_orange_tour.svg'), url('../images/spot_yellow_tour.svg'),
-    url('../images/spot_blue_article.svg.svg'), url('../images/spot_yellow_article.svg'),
-    url('../images/spot_footer_blue.svg'), url('../images/spot_footer_yellow.svg');
-    background-position: top left,
-    top left,
-    1040px 1452px,
-    1099px 1574px,
-    -170px 2930px,
-    -142px 3187px,
-    1146px 4203px,
-    900px 4268px;
+      url('../images/spot_orange_tour.svg'), url('../images/spot_yellow_tour.svg'),
+      url('../images/spot_blue_article.svg.svg'), url('../images/spot_yellow_article.svg'),
+      url('../images/spot_footer_blue.svg'), url('../images/spot_footer_yellow.svg');
+    background-position:
+      top left,
+      top left,
+      1040px 1452px,
+      1099px 1574px,
+      -170px 2930px,
+      -142px 3187px,
+      1146px 4203px,
+      900px 4268px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   }
   .container--center {
@@ -70,15 +69,15 @@
   }
 }
 
-
 @media (min-width: $xxl) {
   .container {
     max-width: 60%;
     padding: 0 5%;
-    background-position: top left,
-    top left,
-    bottom right,
-    bottom right;
+    background-position:
+      top left,
+      top left,
+      bottom right,
+      bottom right;
     backdrop-filter: blur(1000px);
   }
 }

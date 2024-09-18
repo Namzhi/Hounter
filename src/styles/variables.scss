@@ -7,18 +7,21 @@ $xxl: 2560px;
 
 @font-face {
   font-family: 'Lexend';
-  src: local('Lexend'),
-  url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+  src:
+    local('Lexend'),
+    url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lexend-extra-bold';
-  src: local('Lexend-extra-bold'),
-  url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
+  src:
+    local('Lexend-extra-bold'),
+    url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Lexend-light';
-  src: local('Lexend-light'),
-  url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
+  src:
+    local('Lexend-light'),
+    url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
 }

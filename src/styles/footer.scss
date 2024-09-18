@@ -64,7 +64,6 @@
 
   &__property-item {
     margin-bottom: 18px;
-
   }
 
   &__article {
@@ -89,7 +88,7 @@
   margin-bottom: 22px;
 }
 
-@media(min-width: $md) {
+@media (min-width: $md) {
   .footer {
     &__container {
       flex-direction: row;
@@ -101,8 +100,6 @@
 
     &__company-aside {
       width: 323px;
-
     }
   }
-
 }
