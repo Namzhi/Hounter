@@ -1,10 +1,12 @@
 .recommendation {
   &__container {
+    margin-bottom: 120px;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
+
   }
 
   &__menu {
@@ -12,11 +14,14 @@
     align-items: flex-start;
     gap: 32px;
     //justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   &__button {
     display: flex;
+    box-sizing: border-box;
     padding: 12px 24px;
+    height: 52px;
     align-items: center;
     gap: 8px;
     border-radius: 32px;
@@ -26,7 +31,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 28px; /* 155.556% */
+    //line-height: 28px; /* 155.556% */
     &--house {
       .button__name::before {
         content: url('../images/ph_house-fill.svg');
@@ -38,6 +43,8 @@
     }
 
     &--villa {
+      //vertical-align: center;
+
       .button__name::before {
         content: url('../images/ic_round-villa.svg');
         width: 36px;
@@ -67,8 +74,13 @@
   font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
-  margin-left: -40px;
-  margin-bottom: 12px;
+  display: block;
+
+  &__wrapper {
+    margin-left: -40px;
+    margin-bottom: 12px;
+  }
+
 
   &::before {
     content: '';
@@ -82,6 +94,8 @@
 }
 
 .section-title {
+  margin: 0;
+
   color: var(--MRT-App-Headline, #1b1c57);
   font-family: Lexend;
   font-size: 32px;
@@ -96,6 +110,22 @@
 }
 
 .recommended-swiper {
+  &.slider__images-wrapper {
+
+
+    & img {
+      margin-right: 16px;
+      width: 40px;
+      height: 40px;
+      transform: translateY(2px);
+    }
+
+    & > .slider__text {
+      justify-content: space-between;
+      height: 48px;
+    }
+
+  }
 }
 
 .swiper-button-prev {
@@ -137,6 +167,28 @@
 .recommended-slider {
   &__content {
     width: fit-content;
+
+    & > .slider {
+
+
+      &__title {
+        color: var(--Neutral-900, #0E1735);
+        font-family: Lexend;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 133.333% */
+      }
+
+      &__desc {
+        color: var(--Neutral-500, #888B97);
+        font-family: Lexend;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+      }
+    }
   }
 }
 
@@ -144,6 +196,7 @@
   &__pic {
     width: 340px;
     height: 382px;
+    margin-bottom: 24px;
 
     &--roselands {
       background-image: url('../images/Rectangle 15.png');
@@ -161,39 +214,96 @@
       border-radius: 24px;
 
       background-clip: padding-box;
-      background: url('../images/cosmo.jpeg') 0 -10px;
-      background-size: 100%;
+      background: url('../images/cosmo.jpeg') 0 -60px;
+      /* transform: scale(1.5); */
+      background-size: 120%;
     }
   }
 
   &__offer {
-    display: inline-flex;
+    //display: inline-flex;
+    width: fit-content;
     padding: 8px 16px;
     align-items: flex-start;
     gap: 10px;
     border-radius: 32px;
-    background: var(--Red-100, #fee2e2);
+
     transform: translate(16px, 332px);
 
     &--roselands {
+      background: var(--Red-100, #fee2e2);
+      color: var(--Red-500, #EF4444);
+
+      &::before {
+        content: url('../images/ant-design_fire-filled.svg');
+        width: 16px;
+        height: 16px;
+        vertical-align: -15%;
+        margin-right: 10px;
+      }
     }
 
     &--woodlandside {
+      color: var(--Blue-700, #1D4ED8);
+      background: var(--Blue-100, #DBEAFE);
+
+      &::before {
+        content: url('../images/ph_house-fill (1).svg');
+        width: 16px;
+        height: 16px;
+        vertical-align: -15%;
+        margin-right: 10px;
+      }
     }
 
     &--lighthouse {
+      color: var(--Green-700, #047857);
+      background: var(--Green-100, #D1FAE5);
+
+      &::before {
+        content: url('../images/entypo_wallet.svg');
+        width: 16px;
+        height: 16px;
+        vertical-align: -15%;
+        margin-right: 10px;
+      }
     }
 
     &--cosmo {
+      background: var(--Red-100, #fee2e2);
+      color: var(--Red-500, #EF4444);
+
+      &::before {
+        content: url('../images/ant-design_fire-filled.svg');
+        width: 16px;
+        height: 16px;
+        vertical-align: -15%;
+        margin-right: 10px;
+      }
     }
   }
 
   &__desc {
+    display: flex;
+    flex-direction: column;
+    height: 72px;
   }
 
   &__name {
+    color: var(--Neutral-900, #0E1735);
+    font-family: Lexend;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
   }
 
   &__price {
+    color: var(--Neutral-700, #3C4563);
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
   }
 }

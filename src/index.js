@@ -81,13 +81,13 @@ let swiperK = new Swiper('.tour-carousel', {
   },
 })
 //!!!!!!!!!!!!!!!!!!
-// tourCarouselMini.addEventListener('click', () => {
-//   tourCarousel.classList.remove('tour-carousel__container--invisible')
-// })
-// const tourCarouselButton = document.querySelector('.tour-carousel__button--exit')
-// tourCarouselButton.addEventListener('click', () => {
-//   tourCarousel.classList.add('tour-carousel__container--invisible')
-// })
+tourCarouselMini.addEventListener('click', () => {
+  tourCarousel.classList.remove('tour-carousel__container--invisible')
+})
+const tourCarouselButton = document.querySelector('.tour-carousel__button--exit')
+tourCarouselButton.addEventListener('click', () => {
+  tourCarousel.classList.add('tour-carousel__container--invisible')
+})
 //!!!!!!!!!!!!!!!!!!
 const swiperReview = new Swiper('.review-carousel', {
   loop: true,

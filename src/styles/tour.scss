@@ -213,11 +213,16 @@ iframe.tour__video {
   &__container {
     //width: 1440px;
     //height: 4590px;
+    margin-bottom: 120px;
     display: flex;
     justify-content: space-between;
   }
 
   &__block-desc {
+    & > .section-title__wrapper {
+      margin-bottom: 16px;
+    }
+
   }
 
   &__text {
