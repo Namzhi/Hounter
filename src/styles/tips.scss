@@ -1,15 +1,20 @@
 .tips {
   &__container {
     padding-right: 120px;
+    margin-bottom: 120px;
 
     & > .section-title {
       width: 422px;
       margin: 0 auto 24px;
     }
+
+    & > .section-name__wrapper {
+      margin-bottom: 24px;
+    }
   }
 
   &__button {
-    margin: 0 auto 42px;
+    margin: 0 auto 54px;
 
     &::after {
       //background: none;
@@ -24,10 +29,6 @@
   }
 }
 
-.section-name {
-  &--line-up {
-  }
-}
 
 .button {
 }
@@ -36,6 +37,7 @@
   //height: 522px;
   width: 573px;
   padding: 0;
+  margin: 0;
 
   &__item {
     list-style-type: none;
@@ -43,6 +45,10 @@
 
     display: flex;
     margin-bottom: 44px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0
   }
 }
 
@@ -56,9 +62,8 @@
       object-fit: cover;
       flex-shrink: 0;
       border-radius: 16px;
-      background:
-        lightgray 50% / cover no-repeat,
-        #c4c4c4;
+      background: lightgray 50% / cover no-repeat,
+      #c4c4c4;
       margin-bottom: 24px;
     }
 

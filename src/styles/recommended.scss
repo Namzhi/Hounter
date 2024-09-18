@@ -6,7 +6,7 @@
   &__header {
     display: flex;
     justify-content: space-between;
-
+    margin-right: 120px;
   }
 
   &__menu {
@@ -81,7 +81,6 @@
     margin-bottom: 12px;
   }
 
-
   &::before {
     content: '';
     display: inline-block;
@@ -111,8 +110,6 @@
 
 .recommended-swiper {
   &.slider__images-wrapper {
-
-
     & img {
       margin-right: 16px;
       width: 40px;
@@ -124,7 +121,6 @@
       justify-content: space-between;
       height: 48px;
     }
-
   }
 }
 
@@ -169,10 +165,8 @@
     width: fit-content;
 
     & > .slider {
-
-
       &__title {
-        color: var(--Neutral-900, #0E1735);
+        color: var(--Neutral-900, #0e1735);
         font-family: Lexend;
         font-size: 18px;
         font-style: normal;
@@ -181,7 +175,7 @@
       }
 
       &__desc {
-        color: var(--Neutral-500, #888B97);
+        color: var(--Neutral-500, #888b97);
         font-family: Lexend;
         font-size: 14px;
         font-style: normal;
@@ -232,7 +226,7 @@
 
     &--roselands {
       background: var(--Red-100, #fee2e2);
-      color: var(--Red-500, #EF4444);
+      color: var(--Red-500, #ef4444);
 
       &::before {
         content: url('../images/ant-design_fire-filled.svg');
@@ -244,8 +238,8 @@
     }
 
     &--woodlandside {
-      color: var(--Blue-700, #1D4ED8);
-      background: var(--Blue-100, #DBEAFE);
+      color: var(--Blue-700, #1d4ed8);
+      background: var(--Blue-100, #dbeafe);
 
       &::before {
         content: url('../images/ph_house-fill (1).svg');
@@ -258,7 +252,7 @@
 
     &--lighthouse {
       color: var(--Green-700, #047857);
-      background: var(--Green-100, #D1FAE5);
+      background: var(--Green-100, #d1fae5);
 
       &::before {
         content: url('../images/entypo_wallet.svg');
@@ -271,7 +265,7 @@
 
     &--cosmo {
       background: var(--Red-100, #fee2e2);
-      color: var(--Red-500, #EF4444);
+      color: var(--Red-500, #ef4444);
 
       &::before {
         content: url('../images/ant-design_fire-filled.svg');
@@ -290,7 +284,7 @@
   }
 
   &__name {
-    color: var(--Neutral-900, #0E1735);
+    color: var(--Neutral-900, #0e1735);
     font-family: Lexend;
     font-size: 24px;
     font-style: normal;
@@ -299,7 +293,7 @@
   }
 
   &__price {
-    color: var(--Neutral-700, #3C4563);
+    color: var(--Neutral-700, #3c4563);
     font-family: Lexend;
     font-size: 20px;
     font-style: normal;

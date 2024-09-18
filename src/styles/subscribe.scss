@@ -119,6 +119,12 @@
   }
 }
 
+.section-name--line-up {
+  &::before {
+    transform: translate(140px, -26px);
+  }
+}
+
 .subscribe {
   &__container {
     box-sizing: border-box;
@@ -129,6 +135,7 @@
     border-radius: 32px;
     background: url('../images/Rectangle 24.png') lightgray 50% / cover no-repeat;
     position: relative;
+    margin-bottom: 120px;
 
     & > .section-title {
       width: 422px;
@@ -143,6 +150,9 @@
   }
 
   &__input {
+    &:focus-visible {
+      outline: none;
+    }
   }
 
   &__button {

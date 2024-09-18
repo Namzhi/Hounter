@@ -39,20 +39,21 @@ body {
   position: relative;
   //z-index: 2C;
   //background: linear-gradient(165deg, #82ffd2 7px, white 400px);
-  background-image: url("../images/spot_intro_left.svg"), url("../images/spot_intro_top.svg"),
-  url("../images/spot_intro_left.svg"), url("../images/spot_intro_top.svg"),
-  url("../images/spot_intro_left.svg"), url("../images/spot_intro_top.svg"),
-  url("../images/spot_intro_left.svg"), url("../images/spot_intro_top.svg");
-  background-position: left top, left top,
-  left center, right center,
-  left bottom, left bottom,
-  left bottom, left bottom;
-  background-repeat: no-repeat, no-repeat,
-  no-repeat, no-repeat,
-  no-repeat, no-repeat,
-  no-repeat, no-repeat;
+  background-image: url('../images/spot_intro_left.svg'), url('../images/spot_intro_top.svg'),
+  url('../images/spot_orange_tour.svg'), url('../images/spot_yellow_tour.svg'),
+  url('../images/spot_blue_article.svg.svg'), url('../images/spot_yellow_article.svg'),
+  url('../images/spot_footer_blue.svg'), url('../images/spot_footer_yellow.svg');
+  background-position: top left,
+  top left,
+  1040px 1452px,
+  1099px 1574px,
+  -170px 2930px,
+  -142px 3187px,
+  1146px 4203px,
+  900px 4268px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   //opacity: 1;
-  ////filter: blur(80px);
+  //filter: blur(80px);
   //backdrop-filter: blur(80px);
   //backdrop-filter: blur(100%);
 }
@@ -67,8 +68,6 @@ body {
   //height: 337px;
   //flex-shrink: 0;
   //fill: #82FFD2;
-
-
 }
 
 .container--center {
@@ -80,8 +79,6 @@ body {
   width: calc(100%);
   height: 720px;
   //z-index: 3;
-
-
 }
 
 .logo {
@@ -97,7 +94,7 @@ body {
 
   &__name--margin-intro {
     margin-top: 45px;
-    margin-bottom: 105px
+    margin-bottom: 105px;
   }
 
   &__name::before {
@@ -131,7 +128,6 @@ body {
 
   &__title--margin {
     margin-bottom: 24px;
-
   }
 
   &__title--transparent {
@@ -169,10 +165,9 @@ body {
 
   &__wrapper {
     &--margin-intro {
-      margin-bottom: 32px
+      margin-bottom: 32px;
     }
   }
-
 
   &__input {
     width: 100%;
@@ -259,7 +254,7 @@ body {
 .intro {
   &__container {
     display: flex;
-    margin-bottom: 120px
+    margin-bottom: 120px;
   }
 
   &__aside {
