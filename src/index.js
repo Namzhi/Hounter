@@ -1,46 +1,21 @@
-import './styles/main.scss'
-import './styles/recommended.scss'
-import './styles/tour.scss'
-import './styles/review.scss'
-import './styles/tips.scss'
-import './styles/subscribe.scss'
-import './styles/footer.scss'
-
-import 'normalize.css'
-// import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
-// import Swiper JS
 import Swiper from 'swiper'
-// import Swiper styles
+
+import './styles/mixins.scss'
 import 'swiper/css'
-// import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-// import 'swiper/css';
-import {Navigation, Pagination, Thumbs, Scrollbar, EffectCoverflow} from 'swiper/modules'
 
-// Swiper.use([Navigation, Pagination, Scrollbar, EffectCoverflow])
+import {Navigation, Pagination, Thumbs} from 'swiper/modules'
+
 Swiper.use([Navigation, Pagination, Thumbs])
-const swiper = new Swiper('.carousel', {
-  // direction: 'vertical',
+// slider for intro block
+const swiperIntro = new Swiper('.carousel', {
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination--asd',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-
   spaceBetween: 16,
   slidesPerView: 'auto',
 })
-// swiper.on('reachEnd', function () {
-//   console.log('reach to End')
-// })
-const swiperF = new Swiper('.recommended-carousel', {
+// slider for the recommended block
+const swiperRecommended = new Swiper('.recommended-carousel', {
   loop: true,
-
   spaceBetween: 40,
   slidesPerView: 'auto',
   navigation: {
@@ -51,12 +26,11 @@ const swiperF = new Swiper('.recommended-carousel', {
 
 const tourCarouselMini = document.querySelector('.tour-carousel-mini__container')
 const tourCarousel = document.querySelector('.tour-carousel__container')
-
-let swiperK = new Swiper('.tour-carousel', {
+// slider for the tour block
+let swiperTourCarousel = new Swiper('.tour-carousel', {
   loop: true,
   spaceBetween: -60,
   slidesPerView: 2.3,
-  // slideToClickedSlide: true,
   centeredSlides: true,
   initialSlide: 1,
   navigation: {
@@ -64,12 +38,11 @@ let swiperK = new Swiper('.tour-carousel', {
     prevEl: '.tour-carousel__button.swiper-button-prev',
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.tour-carousel__pagination',
   },
   thumbs: {
     swiper: {
       loop: true,
-      // speed: 5000,
       el: '.tour-carousel-mini',
       slidesPerView: 'auto',
       spaceBetween: 8,
@@ -80,7 +53,7 @@ let swiperK = new Swiper('.tour-carousel', {
     minRatio: 1,
   },
 })
-//!!!!!!!!!!!!!!!!!!
+// eventListeners for making visible and hidden slider for the tour block
 tourCarouselMini.addEventListener('click', () => {
   tourCarousel.classList.remove('tour-carousel__container--invisible')
 })
@@ -88,7 +61,7 @@ const tourCarouselButton = document.querySelector('.tour-carousel__button--exit'
 tourCarouselButton.addEventListener('click', () => {
   tourCarousel.classList.add('tour-carousel__container--invisible')
 })
-//!!!!!!!!!!!!!!!!!!
+// slider for the review block
 const swiperReview = new Swiper('.review-carousel', {
   loop: true,
   spaceBetween: 56,
@@ -98,9 +71,4 @@ const swiperReview = new Swiper('.review-carousel', {
   pagination: {
     el: '.review-carousel__swiper-pagination',
   },
-
-  // navigation: {
-  //   nextEl: '.revieswiper.swiper-button-next',
-  //   prevEl: '.recommended-swiper.swiper-button-prev',
-  // },
 })

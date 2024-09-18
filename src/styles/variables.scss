@@ -1,0 +1,24 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$sm: 576px;
+$md: 768px;
+$xl: 1440px;
+$xxl: 2560px;
+
+@font-face {
+  font-family: 'Lexend';
+  src: local('Lexend'),
+  url('../fonts/Lexend/Lexend-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lexend-extra-bold';
+  src: local('Lexend-extra-bold'),
+  url('../fonts/Lexend/Lexend-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lexend-light';
+  src: local('Lexend-light'),
+  url('../fonts/Lexend/Lexend-Light.ttf') format('truetype');
+}

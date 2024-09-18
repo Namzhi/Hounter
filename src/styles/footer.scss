@@ -2,6 +2,7 @@
   &__container {
     height: 4590px;
     display: flex;
+    flex-direction: column;
     color: var(--MRT-App-Neutral-01, #626687);
     font-family: Lexend;
     font-size: 14px;
@@ -13,7 +14,6 @@
   }
 
   &__company-aside {
-    width: 323px;
   }
 
   &__logo-item {
@@ -59,34 +59,12 @@
 
   &__property {
     width: fit-content;
-
-    margin-left: auto;
     margin-right: 88px;
   }
 
   &__property-item {
     margin-bottom: 18px;
 
-    &--house {
-    }
-
-    &--apartment {
-    }
-
-    &--villa {
-    }
-
-    &--new-article {
-    }
-
-    &--popular-article {
-    }
-
-    &--most-read {
-    }
-
-    &--tips-tricks {
-    }
   }
 
   &__article {
@@ -104,18 +82,27 @@
 
   &__contact-item {
     margin-bottom: 18px;
-
-    &--address {
-    }
-
-    &--tel {
-    }
-
-    &--mail {
-    }
   }
 }
 
 .logo--footer-margin {
   margin-bottom: 22px;
+}
+
+@media(min-width: $md) {
+  .footer {
+    &__container {
+      flex-direction: row;
+    }
+
+    &__property {
+      margin-left: auto;
+    }
+
+    &__company-aside {
+      width: 323px;
+
+    }
+  }
+
 }

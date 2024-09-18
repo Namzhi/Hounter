@@ -1,15 +1,9 @@
 .review {
   &__container {
-    //
-    //padding-top: 100px;
-    margin-left: -120px;
     margin-bottom: 120px;
-
-
   }
 
   &__slide.swiper-slide {
-    //width: auto
   }
 }
 
@@ -44,7 +38,6 @@
 .review-carousel {
   &__main-wrapper {
     overflow: hidden;
-    //height: 600px;
   }
 
   &__slider-wrapper {
@@ -64,7 +57,6 @@
       &__pic {
         width: 740px;
         height: 400px;
-        //flex-shrink: 0;
         border-radius: 8px;
         opacity: 0.7;
         background: lightgray 50% / cover no-repeat,
@@ -73,7 +65,6 @@
         background-size: cover;
         display: flex;
         justify-content: center;
-        //align-items: flex-end;
 
         &--yellow {
           background-image: url('../images/house_review1.jpg');
@@ -87,61 +78,10 @@
           background-image: url('../images/house_review3.jpeg');
         }
 
-        & > .house__offer {
-          & > .house__offer--title {
-          }
-
-          & > .house__offer--text {
-          }
-        }
       }
     }
   }
 
-  &__offer {
-    &--roselands {
-    }
-
-    &--woodlandside {
-    }
-
-    &--lighthouse {
-    }
-
-    &--cosmo {
-    }
-  }
-
-  &__desc {
-  }
-
-  &__name {
-  }
-
-  &__price {
-  }
-}
-
-.review-swiper {
-}
-
-.slider {
-  &__images-wrapper {
-  }
-
-  &__image {
-    &--people {
-    }
-  }
-
-  &__text {
-  }
-
-  &__title {
-  }
-
-  &__desc {
-  }
 }
 
 .review-carousel {
@@ -151,21 +91,12 @@
     height: 249px;
     transform: translate(64px, -144px);
     display: flex;
-    //width: 612px;
-    //height: fit-content;
     padding: 32px;
-    //padding-bottom: 0;
     flex-direction: column;
-    //align-items: flex-start;
     gap: 24px;
     border-radius: 16px;
     background: #fff;
-    //opacity: 1;
-    /* Shadow / Smooth */
     box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.05);
-
-    &--yellow {
-    }
 
     &--title {
       color: var(--MRT-App-Headline, #1b1c57);
@@ -233,3 +164,12 @@
     background-color: #3c4563;
   }
 }
+
+@media (min-width: $md) {
+  .review {
+    &__container {
+      margin-left: -120px;
+    }
+  }
+}
+

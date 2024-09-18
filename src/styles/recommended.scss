@@ -1,3 +1,4 @@
+
 .recommendation {
   &__container {
     margin-bottom: 120px;
@@ -5,15 +6,16 @@
 
   &__header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-right: 120px;
   }
 
   &__menu {
-    display: inline-flex;
+
+    display: block;
     align-items: flex-start;
     gap: 32px;
-    //justify-content: space-between;
     margin-bottom: 40px;
   }
 
@@ -31,7 +33,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    //line-height: 28px; /* 155.556% */
+
     &--house {
       background-color: var(--Green-100, #D1FAE5);;
 
@@ -45,8 +47,6 @@
     }
 
     &--villa {
-      //vertical-align: center;
-
       .button__name::before {
         content: url('../images/ic_round-villa.svg');
         width: 36px;
@@ -107,7 +107,7 @@
 }
 
 .swiper-button_wrapper {
-  display: flex;
+  display: flex
 }
 
 .recommended-swiper {
@@ -217,7 +217,6 @@
   }
 
   &__offer {
-    //display: inline-flex;
     width: fit-content;
     padding: 8px 16px;
     align-items: flex-start;
@@ -310,5 +309,27 @@
   &:active {
     background-color: var(--Green-100, #D1FAE5);
     transition: all 0.3s;
+  }
+}
+
+@media (min-width: $sm) {
+  .recommendation {
+
+
+    &__header {
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+
+}
+
+@media (min-width: $md) {
+  .recommendation__menu {
+    display: inline-flex;
+  }
+  .swiper-button_wrapper {
+    display: flex;
   }
 }
