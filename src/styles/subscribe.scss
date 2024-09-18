@@ -42,13 +42,10 @@
 
   &__image {
     position: absolute;
-    //top: 0;
-    //transform: translate(0, 0);
 
     &--chair {
       top: 38px;
       left: 44px;
-      //transform: translate(44px, -193px);
     }
 
     &--blue_man {
@@ -59,11 +56,9 @@
       flex-shrink: 0;
       border-radius: 36px;
       border: 2px solid #fff;
-      //background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 
-      /* Shadow Smooth 2 */
       box-shadow: 0px 9px 32px 0px rgba(89, 92, 219, 0.1);
-      //transform: translate(204px, -205px)
+
     }
 
     &--chair--yellow-woman {
@@ -74,19 +69,19 @@
       flex-shrink: 0;
       border-radius: 36px;
       border: 2px solid #fff;
-      //transform: translate(67px, -103px)
+
     }
 
     &--chair--white-house {
       top: 178px;
       left: 195px;
-      //transform: translate(195px, -80px)
+
     }
 
     &--grey-house {
       top: 44px;
       left: 930px;
-      //transform: translate(930px, -198px)
+
     }
 
     &--red-woman {
@@ -97,7 +92,7 @@
       flex-shrink: 0;
       border-radius: 36px;
       border: 2px solid #fff;
-      //transform: translate(1082px, -169px)
+
     }
 
     &--purple-man {
@@ -108,13 +103,13 @@
       flex-shrink: 0;
       border-radius: 36px;
       border: 2px solid #fff;
-      //transform: translate(964px, -133px)
+
     }
 
     &--circle-chair {
       top: 197px;
       left: 1072px;
-      //transform: translate(1072px, -60px)
+
     }
   }
 }

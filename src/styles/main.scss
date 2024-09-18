@@ -32,8 +32,9 @@ body {
   color: $primary-color;
   padding-left: 120px;
   box-sizing: border-box;
-  width: 1440px;
-  height: 4590px;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 4590px;
   background: #fff;
   //background: linear-gradient(145deg, #82ffd2 10px, white 600px);
   position: relative;
@@ -52,23 +53,8 @@ body {
   1146px 4203px,
   900px 4268px;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  //opacity: 1;
-  //filter: blur(80px);
-  //backdrop-filter: blur(80px);
-  //backdrop-filter: blur(100%);
 }
 
-.container__spots--intro {
-  //position: absolute;
-  //left: 0;
-  //top: -100px;
-  ////left: 0;
-  ////z-index: -1;
-  //width: 644px;
-  //height: 337px;
-  //flex-shrink: 0;
-  //fill: #82FFD2;
-}
 
 .container--center {
   margin: 0 auto;
