@@ -112,8 +112,11 @@
 
 .recommended-swiper {
   &.slider__images-wrapper {
+    margin: 0 auto;
+
     & img {
       margin-right: 16px;
+
       width: 40px;
       height: 40px;
       transform: translateY(2px);
@@ -163,7 +166,7 @@
 
 .recommended-slider {
   &__content {
-
+    text-align: center;
     display: flex;
     flex-direction: column;
 
@@ -191,6 +194,7 @@
 
 .house {
   &__pic {
+    margin: 0 auto;
     display: flex;
     width: 178px;
     height: 200px;
@@ -313,11 +317,19 @@
 }
 
 @media (min-width: $sm) {
+  .recommended-swiper {
+    &.slider__images-wrapper {
+      margin: 0;
+    }
+  }
   .recommendation {
     &__header {
       display: flex;
       flex-direction: row;
     }
+  }
+  .recommended-slider__content {
+    text-align: left;
   }
 }
 
@@ -345,10 +357,13 @@
   }
   .recommended-slider__content {
     display: block;
+
   }
 
   .house {
+
     &__pic {
+
       width: 340px;
       height: 382px;
     }

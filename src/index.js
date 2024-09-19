@@ -16,12 +16,24 @@ const swiperIntro = new Swiper('.carousel', {
 // slider for the recommended block
 const swiperRecommended = new Swiper('.recommended-carousel', {
   loop: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    576: {
+      spaceBetween: 40,
+      slidesPerView: 'auto',
+    },
+  },
   spaceBetween: 40,
   slidesPerView: 'auto',
   navigation: {
     nextEl: '.recommended-swiper.swiper-button-next',
     prevEl: '.recommended-swiper.swiper-button-prev',
   },
+  centeredSlides: true,
 })
 
 const tourCarouselMini = document.querySelector('.tour-carousel-mini__container')
