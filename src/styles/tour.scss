@@ -182,7 +182,6 @@ iframe.tour__video {
   &__block-desc {
     width: 100%;
     margin-bottom: 30px;
-    //
 
     & > .section-title__wrapper {
       margin-bottom: 16px;
@@ -203,7 +202,6 @@ iframe.tour__video {
 
   &__house-detail {
     display: flex;
-    //flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 32px;
     border-bottom: 2px solid var(--Neutral-100, #f0f3fd);
@@ -246,7 +244,6 @@ iframe.tour__video {
     }
 
     &--bathroom {
-      //margin-left: 26.5px;
 
       &::before {
         content: url('../images/bath 1.svg');
@@ -268,7 +265,6 @@ iframe.tour__video {
     }
 
     &--floors {
-      //margin-left: 26.5px;
 
       &::before {
         content: url('../images/stairs-with-handrail 1.svg');
@@ -307,7 +303,6 @@ iframe.tour__video {
     font-weight: 500;
     line-height: 24px; /* 133.333% */
     color: var(--Neutral-900, #0e1735);
-    //margin-right: 59px;
     margin-right: 16px;
   }
 
@@ -328,19 +323,17 @@ iframe.tour__video {
     gap: 16px;
     border-radius: 32px;
     width: 163px;
-    //height: 48px;
     background: var(--Green-500, #10b981);
   }
 
   &__button--text {
     color: #fff;
     font-family: Lexend;
-    //font-size: 14px;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     vertical-align: middle;
-    //line-height: 22px; /* 157.143% */
+
     &::before {
       display: inline-block;
       content: '';
@@ -366,22 +359,17 @@ iframe.tour__video {
     width: 440px;
   }
 
-
   .contact {
-
     &__name {
       margin-right: 59px;
-
     }
 
     &__button {
       height: 48px;
 
       &--text {
-        //font-size: 14px;
         font-size: 14px;
-        //line-height: 22px
-        line-height: 15px
+        line-height: 15px;
       }
     }
   }
@@ -393,25 +381,20 @@ iframe.tour__video {
       flex-direction: row;
     }
 
-    //align-items: center;
     &__block-desc {
       margin-bottom: 0;
       transform: translateX(-32px);
-      //transform: translateX(32px);
     }
   }
   .contact__button--text {
     font-size: 14px;
-    //font-size: 10px;
-    line-height: 22px
+    line-height: 22px;
   }
 }
 
 @media (min-width: $xxl) {
-
   .tour__container {
     width: 90%;
-    //margin: 0 auto;
     text-align: center;
   }
   .tour__house-detail {
@@ -425,4 +408,3 @@ iframe.tour__video {
     justify-content: center;
   }
 }
-

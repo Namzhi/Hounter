@@ -32,9 +32,7 @@
 }
 
 @media (min-width: $md) {
-  //.container {
-  //  max-height: 6000px;
-  //}
+
 }
 
 @media (min-width: $xl) {
@@ -45,7 +43,6 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 1440px;
-    //max-height: 4590px;
     background: #fff;
     position: relative;
     background-image: url('../images/spot_intro_left.svg'), url('../images/spot_intro_top.svg'),

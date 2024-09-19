@@ -125,7 +125,7 @@
   &__wrapper {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px
+    margin-bottom: 80px;
   }
 
   &__text {
@@ -189,7 +189,6 @@
     background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
     url('../images/image 6.jpg') lightgray no-repeat;
     background-size: cover;
-
   }
 
   &__header {
@@ -219,7 +218,6 @@
 }
 
 .menu {
-
   &__button {
     display: inline-block;
     padding: 8px 16px;
@@ -296,7 +294,6 @@
     margin-right: 16px;
 
     &--people {
-      //width: 112px;
       width: 70px;
       margin-right: auto;
     }
@@ -306,14 +303,12 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    //padding: 24px;
     padding: 15px;
     align-items: center;
     justify-content: space-between;
     border-radius: 32px;
     background-color: #fff;
     width: fit-content;
-    //height: 104px;
     box-shadow: 0 11px 48px 0 rgba(51, 51, 51, 0.06);
   }
 
@@ -363,8 +358,6 @@
 
 @media (min-width: $md) {
   .intro__aside {
-    //background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
-    //url('../images/image 6.jpg') lightgray no-repeat;
     height: 720px;
     border-radius: 0px 0px 0px 80px;
     background-size: cover;
@@ -373,7 +366,6 @@
     flex-direction: row;
   }
   .intro__header {
-    //flex
     margin-bottom: 0px;
     margin-top: 46px;
     margin-left: 93px;
@@ -385,7 +377,6 @@
     }
 
     &__logos-list {
-      //margin: 0;
       display: flex;
       width: 427px;
       justify-content: space-between;
@@ -413,7 +404,6 @@
       font-style: normal;
       font-weight: 600;
       line-height: 22px;
-
     }
   }
   .menu__button {
@@ -431,7 +421,7 @@
   .slider {
     &__image {
       width: 56px;
-      height: 56px
+      height: 56px;
     }
 
     &__content {
@@ -443,14 +433,12 @@
       display: flex;
       width: fit-content;
 
-
       &--people {
         width: 112px;
         margin-right: 16px;
       }
     }
   }
-
 }
 
 @media (min-width: $xl) {
@@ -728,7 +716,6 @@
         display: flex;
         width: 112px;
 
-
         &:nth-child(1) {
           transform: translate(0%, 0px);
         }
@@ -747,10 +734,8 @@
       display: flex;
       width: fit-content;
 
-
       &--people {
         width: 112px;
-
       }
     }
 
@@ -801,11 +786,10 @@
 
     &__search {
       width: 60%;
-
     }
 
     &__title {
-      width: 100%
+      width: 100%;
     }
 
     &__desc {
@@ -817,17 +801,13 @@
       align-items: center;
       text-align: center;
     }
-
   }
   .partners__text {
     margin: 0 auto;
   }
   .search {
     &__wrapper {
-      //width: 100%;
     }
-
-
   }
   .intro__header {
     width: 80%;
