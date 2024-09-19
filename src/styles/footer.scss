@@ -1,6 +1,5 @@
 .footer {
   &__container {
-    height: 4590px;
     display: flex;
     flex-direction: column;
     color: var(--MRT-App-Neutral-01, #626687);
@@ -11,6 +10,7 @@
     line-height: 24px; /* 171.429% */
     opacity: 0.75;
     padding-right: 120px;
+    padding-bottom: 120px;
   }
 
   &__company-aside {

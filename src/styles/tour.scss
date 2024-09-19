@@ -182,7 +182,7 @@ iframe.tour__video {
   &__block-desc {
     width: 100%;
     margin-bottom: 30px;
-    transform: translateX(-32px);
+    //
 
     & > .section-title__wrapper {
       margin-bottom: 16px;
@@ -307,7 +307,8 @@ iframe.tour__video {
     font-weight: 500;
     line-height: 24px; /* 133.333% */
     color: var(--Neutral-900, #0e1735);
-    margin-right: 59px;
+    //margin-right: 59px;
+    margin-right: 16px;
   }
 
   &__position {
@@ -327,18 +328,19 @@ iframe.tour__video {
     gap: 16px;
     border-radius: 32px;
     width: 163px;
-    height: 48px;
+    //height: 48px;
     background: var(--Green-500, #10b981);
   }
 
   &__button--text {
     color: #fff;
     font-family: Lexend;
+    //font-size: 14px;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     vertical-align: middle;
-    line-height: 22px; /* 157.143% */
+    //line-height: 22px; /* 157.143% */
     &::before {
       display: inline-block;
       content: '';
@@ -363,6 +365,26 @@ iframe.tour__video {
   .tour__house-detail {
     width: 440px;
   }
+
+
+  .contact {
+
+    &__name {
+      margin-right: 59px;
+
+    }
+
+    &__button {
+      height: 48px;
+
+      &--text {
+        //font-size: 14px;
+        font-size: 14px;
+        //line-height: 22px
+        line-height: 15px
+      }
+    }
+  }
 }
 
 @media (min-width: $xl) {
@@ -374,18 +396,33 @@ iframe.tour__video {
     //align-items: center;
     &__block-desc {
       margin-bottom: 0;
+      transform: translateX(-32px);
       //transform: translateX(32px);
     }
+  }
+  .contact__button--text {
+    font-size: 14px;
+    //font-size: 10px;
+    line-height: 22px
   }
 }
 
 @media (min-width: $xxl) {
-  .tour__block-desc {
+
+  .tour__container {
+    width: 90%;
+    //margin: 0 auto;
+    text-align: center;
   }
   .tour__house-detail {
-    width: 100%;
+    width: 60%;
+    margin: 32px auto;
   }
   .tour__text {
     width: 100%;
   }
+  .contact__wrapper {
+    justify-content: center;
+  }
 }
+

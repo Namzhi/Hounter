@@ -29,8 +29,25 @@ const tourCarousel = document.querySelector('.tour-carousel__container')
 // slider for the tour block
 let swiperTourCarousel = new Swiper('.tour-carousel', {
   loop: true,
-  spaceBetween: -60,
-  slidesPerView: 2.3,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2.3,
+      spaceBetween: -60,
+    },
+  },
+
   centeredSlides: true,
   initialSlide: 1,
   navigation: {
@@ -64,8 +81,25 @@ tourCarouselButton.addEventListener('click', () => {
 // slider for the review block
 const swiperReview = new Swiper('.review-carousel', {
   loop: true,
-  spaceBetween: 56,
-  slidesPerView: 'auto',
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 56,
+    },
+  },
+
   centeredSlides: true,
   initialSlide: 3,
   pagination: {

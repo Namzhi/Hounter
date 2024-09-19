@@ -26,7 +26,10 @@
     box-sizing: border-box;
     width: 30%;
     flex-shrink: 0;
-
+    border: 5px;
+    padding: 5px;
+    font-size: 11px;
+    //line-height: 16px;
     align-items: center;
     gap: 4px;
     border: none;
@@ -37,7 +40,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 22px; /* 157.143% */
+    //line-height: 22px; /* 157.143% */
   }
 
   &__image {
@@ -138,8 +141,7 @@
     }
   }
 
-  &__button {
-  }
+
 }
 
 .button {
@@ -160,6 +162,9 @@
     &__button {
       width: 129px;
       padding: 12px 16px;
+      //line-height: 16px;
+
+      line-height: 22px; /* 157.143% */
     }
   }
 }
