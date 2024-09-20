@@ -10,8 +10,17 @@
 
     & > .section-name__wrapper {
       margin-bottom: 24px;
+
+      > .section-name--tips-line-up {
+        &::before {
+          vertical-align: 0;
+          margin-right: 0;
+          transform: translate(142px, -26px);
+        }
+      }
     }
   }
+
 
   &__button {
     margin: 0 auto 54px;
@@ -50,7 +59,6 @@
 
 .article {
   &--focus {
-
     & > .article__image {
       margin-top: 44px;
       min-width: 200px;
@@ -247,6 +255,7 @@
       }
     }
   }
+
   .article {
     &__text p {
       margin: 0;

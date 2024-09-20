@@ -185,8 +185,9 @@
     justify-content: space-between;
 
     border-radius: 0px 30px 0px 30px;
-    background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
-    url('../images/image 6.jpg') lightgray no-repeat;
+    background:
+      linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
+      url('../images/image 6.jpg') lightgray no-repeat;
     background-size: cover;
   }
 
@@ -630,8 +631,9 @@
       flex-direction: column;
       justify-content: space-between;
       border-radius: 0px 0px 0px 80px;
-      background: linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
-      url('../images/image 6.jpg') lightgray no-repeat;
+      background:
+        linear-gradient(17deg, #0c1537 -6.09%, rgba(12, 21, 55, 0) 32.63%),
+        url('../images/image 6.jpg') lightgray no-repeat;
       background-size: cover;
     }
 

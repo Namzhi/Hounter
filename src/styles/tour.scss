@@ -244,7 +244,6 @@ iframe.tour__video {
     }
 
     &--bathroom {
-
       &::before {
         content: url('../images/bath 1.svg');
         width: 36px;
@@ -265,7 +264,6 @@ iframe.tour__video {
     }
 
     &--floors {
-
       &::before {
         content: url('../images/stairs-with-handrail 1.svg');
         width: 36px;
@@ -383,7 +381,6 @@ iframe.tour__video {
 
     &__block-desc {
       margin-bottom: 0;
-      transform: translateX(-32px);
     }
   }
   .contact__button--text {
